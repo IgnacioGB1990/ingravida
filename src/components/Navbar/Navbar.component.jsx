@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { MenuItems } from "./MenuItems"
+import { Button } from "./Button.js"
 import "./Navbar.styles.css"
 
 
@@ -8,13 +9,13 @@ export const Navbar = () => {
   const [Display, setDisplay] = useState(false)
 
   return (
-    <nav className="NavBarItems" >
-      <h1 className="navbar-logo">Ingravida<i className="fab fa-react"></i></h1>
+    <nav className="NavbarItems" >
+      <h1 className="navbar-logo">Ingravida<i className="fas fa-camera"></i></h1>
 
       <div className="menu-icon" onClick={() => setDisplay(!Display)}>
         <i className={Display ? "fa fa-times" : "fas fa-bars"}></i>
       </div>
-      <ul>
+      <ul className={Display ? "nav-menu active" : "nav-menu"}>
         {MenuItems.map((item, index) => {
           return (
             <li key={index}>
@@ -25,6 +26,7 @@ export const Navbar = () => {
           )
         })}
       </ul>
+      <Button >Sign up</Button>
     </nav >
   )
 }
