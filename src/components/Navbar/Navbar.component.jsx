@@ -10,7 +10,7 @@ export const Navbar = () => {
 
   return (
     <nav className="NavbarItems" >
-      <h1 className="navbar-logo">Ingravida<i className="fas fa-camera"></i></h1>
+      <h1 className="navbar-logo">Ingrávida<i className="fas fa-anchor"></i></h1>
 
       <div className="menu-icon" onClick={() => setDisplay(!Display)}>
         <i className={Display ? "fa fa-times" : "fas fa-bars"}></i>
@@ -26,7 +26,7 @@ export const Navbar = () => {
           )
         })}
       </ul>
-      <Button >Sign up</Button>
+      <Button >Inicio</Button>
     </nav >
   )
 }
