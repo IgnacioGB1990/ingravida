@@ -6,15 +6,19 @@ import "./App.css"
 import HomePage from "./pages/homepage/homepage.component"
 import ProductsPage from "./pages/product/product.component"
 import TestPage from "./pages/test/test.component"
+import ContactPage from "./pages/contact/contact.component"
 
 function App() {
   return (
     <Router>
       <div className="App">
         <Navbar />
-        <Route exact path="/" component={HomePage} />
-        <Route path="/productos" component={ProductsPage} />
-        <Route path="/test" component={TestPage} />
+        <Switch>
+          <Route exact path="/" component={HomePage} />
+          <Route path="/productos" component={ProductsPage} />
+          <Route path="/test" component={TestPage} />
+          <Route path="/contacto" component={ContactPage} />
+        </Switch>
       </div>
     </Router>
   );

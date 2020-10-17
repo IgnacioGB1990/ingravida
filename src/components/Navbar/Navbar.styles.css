@@ -12,6 +12,13 @@
   justify-self: start;
   margin-left:20px;
   cursor:pointer;
+  text-decoration:none;
+}
+
+.navbar-name{
+  color:white;
+  cursor:pointer;
+  text-decoration:none;
 }
 
 .fa-anchor{
