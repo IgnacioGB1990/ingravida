@@ -5,10 +5,13 @@
   justify-content: center;
   align-items: center;
   font-size:0.8rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }
 
 .navbar-logo{
-  color:white;
+  color:black;
   justify-self: start;
   margin-left:1px;
   cursor:pointer;
@@ -16,7 +19,7 @@
 }
 
 .navbar-name{
-  color:white;
+  color:black;
   cursor:pointer;
   text-decoration:none;
  
@@ -39,7 +42,7 @@
 }
 
 .nav-links{
-  color:white;
+  color:black;
   text-decoration:none;
   padding: 0.5rem 1rem;
 }
@@ -51,7 +54,7 @@
 }
 
 .fa-bars{
-  color: white;
+  color: black;
 }
 
 .nav-links-mobile{
@@ -126,7 +129,7 @@ display:none;
   }
 
   .fa-times{
-    color:white;
+    color:black;
     font-size:1.4rem;
   }
 
@@ -139,12 +142,12 @@ display:none;
     width:30%;
     background:#4ad9e4;
     text-decoration:none;
-    color: white;
+    color: black;
     font-size:1rem;
   }
 
   .nav-links-mobile:hover{
-    background:white;
+    background:black;
     color:#6568F4;
     transition:250ms;
   }
