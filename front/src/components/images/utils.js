@@ -1,1 +1,1 @@
-export const YolsPortada = "https://res.cloudinary.com/djkhnzte2/image/upload/v1603626535/_IGB4473_rqjllf.jpg"
+export const YolsPortada = "https://res.cloudinary.com/djkhnzte2/image/upload/v1603649176/_IGB4459_mqlbba.jpg"

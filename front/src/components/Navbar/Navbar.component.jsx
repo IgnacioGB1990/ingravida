@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import { MenuItems } from "./MenuItems"
 import { Button } from "./Button.js"
 import "./Navbar.styles.css"
-import { Link } from "react-router-dom"
+
 
 
 export const Navbar = () => {

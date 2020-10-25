@@ -8,8 +8,8 @@ const STYLES = [
 
 
 const SIZES = [
-  "btn--medium",
-  "btn--large"
+  "btn--small",
+  "btn--medium"
 ]
 
 export const Button = ({
