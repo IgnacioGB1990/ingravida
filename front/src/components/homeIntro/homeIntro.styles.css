@@ -1,27 +1,26 @@
-
-.image-container {
+.Home-Intro-Container {
   height:100%;
   width:100%;
-}
-.image-fit {
-  /* max-width: 100%;
-  max-height: 100vh;
-  margin: auto;
-  object-fit:; */
+  background-color: #fff;
   
+}
+.Home-Intro-Image {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   max-width: 100%;
+  height:auto;
+  padding-top:65px;
 }
 
-.centered-text {
+.Home-Intro-Centered-Text {
   position: absolute;
   top: 60%;
   left: 50%;
   transform: translate(-70%, -85%);
   font-size:3em;
-  color:white;
+  font-weight: bold;
+  color:#cf3;
   max-width: 100%;
   text-align:center;
 }

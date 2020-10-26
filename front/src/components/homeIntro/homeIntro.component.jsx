@@ -4,9 +4,9 @@ import "./homeIntro.styles.css"
 
 export const HomeIntro = () => {
   return (
-    <div className="image-container">
-      <img class="image-fit" src={YolsPortada} alt="Home Page" />
-      <div className="centered-text">tu transformación empieza aquí</div>
+    <div className="Home-Intro-Container">
+      <img class="Home-Intro-Image" src={YolsPortada} height="200" alt="Home Page" />
+      <div className="Home-Intro-Centered-Text">tu transformación empieza aquí</div>
     </div>
   )
 }
