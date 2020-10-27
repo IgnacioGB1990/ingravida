@@ -1,7 +1,7 @@
 export const MenuItems = [
   {
     title: "El ABC de los rizos",
-    url: "contacto",
+    url: "abc",
     cName: "nav-links"
   },
   {
@@ -21,8 +21,9 @@ export const MenuItems = [
   },
 
   {
-    title: "Inicio",
+    title: "Iniciar sesión",
     url: "inicio",
-    cName: "nav-links-mobile"
+    cName: "nav-links"
+    // cName: "nav-links-mobile"
   }
 ]

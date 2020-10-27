@@ -16,22 +16,18 @@ export const Navbar = () => {
       <div className="menu-icon" onClick={() => setDisplay(!Display)}>
         <i className={Display ? "fa fa-times" : "fas fa-bars"}></i>
       </div>
-      <ul className={Display ? "nav-menu active" : "nav-menu"}>
+      <ul className={Display ? "nav-menu active " : "nav-menu"}>
         {MenuItems.map((item, index) => {
-          console.log(item.url)
           return (
-
             <li key={index}>
-
               <a className={item.cName} href={item.url}>
                 {item.title}
               </a>
             </li>
-
           )
         })}
       </ul>
-      <Button >Inicio</Button>
+      {/* <Button >Inicio</Button> */}
     </nav >
   )
 }
