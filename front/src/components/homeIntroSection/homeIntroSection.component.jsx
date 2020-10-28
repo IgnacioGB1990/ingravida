@@ -3,7 +3,7 @@ import "./homeIntroSection.styles.css"
 
 export const HomeIntroSection = () => {
   return (
-    <div className="Home-Intro-Section-Cotainer">
+    <div className="Home-Intro-Section-Container">
       <h1 className="Home-Intro-Section-Text">Hellu</h1>
     </div>
   )
