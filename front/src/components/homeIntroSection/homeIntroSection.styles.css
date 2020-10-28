@@ -1,0 +1,25 @@
+.Home-Intro-Container{
+  top:1000px;
+  background-color: red;
+  width:100px;
+  height:100px;
+  text-align:center;
+  z-index: 2;
+} 
+
+
+
+
+
+/* .Home-Intro-Centered-Text {
+ 
+  top: 60%;
+  left: 50%;
+
+  font-size:3em;
+  font-weight: bold;
+  color:#cf3;
+  max-width: 100%;
+  
+  z-index: 3;
+} */
