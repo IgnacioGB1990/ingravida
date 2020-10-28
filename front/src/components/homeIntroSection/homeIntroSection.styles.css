@@ -1,25 +1,9 @@
-.Home-Intro-Container{
-  top:1000px;
-  background-color: red;
-  width:100px;
-  height:100px;
+.Home-Intro-Section-Container{
+  border:1px solid red;
   text-align:center;
-  z-index: 2;
+  position:relative;
 } 
 
-
-
-
-
-/* .Home-Intro-Centered-Text {
- 
-  top: 60%;
-  left: 50%;
-
-  font-size:3em;
-  font-weight: bold;
-  color:#cf3;
-  max-width: 100%;
-  
-  z-index: 3;
-} */
+.Home-Intro-Section-Text{
+  font-size: 5em;
+}

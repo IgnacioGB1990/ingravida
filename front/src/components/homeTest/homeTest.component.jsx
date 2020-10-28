@@ -6,7 +6,7 @@ export const HomeTest = () => {
   return (
     <div className="image-container">
       <img className="image-fit" src={YolsPortada} height="200" alt="Home Page" />
-      <div className="centered-text">tu transformación empieza aquí</div>
+      <div className="centered-text">Test 2222222</div>
     </div>
   )
 }

@@ -6,8 +6,10 @@ import "./homeIntro.styles.css"
 export const HomeIntro = () => {
   return (
     <div className="Home-Intro-Container">
-      <HomeIntroSection />
+
       <img className="Home-Intro-Image" src={YolsPortada} height="200" alt="Home Page" />
+
+      <HomeIntroSection />
     </div>
   )
 }
