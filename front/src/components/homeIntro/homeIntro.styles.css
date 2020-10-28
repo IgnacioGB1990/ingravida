@@ -26,3 +26,15 @@
   max-width: 100%;
   text-align:center;
 }
+
+@media screen and (max-width:960px){
+
+  .Home-Intro-Image {
+  
+    padding:0px 0px;
+  
+  }
+
+
+
+}
