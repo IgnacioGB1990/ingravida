@@ -9,7 +9,7 @@ export const HomeIntro = () => {
 
       <img className="Home-Intro-Image" src={YolsPortada} height="200" alt="Home Page" />
 
-      <HomeIntroSection />
+      <  HomeIntroSection />
     </div>
   )
 }
