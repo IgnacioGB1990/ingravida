@@ -1,2 +1,2 @@
-//img 1280 x 640
-export const YolsPortada = "https://res.cloudinary.com/djkhnzte2/image/upload/v1603727214/_IGB4459_1_fu4vta.jpg"
+//img 5120 x 2400
+export const YolsPortada = "https://res.cloudinary.com/djkhnzte2/image/upload/v1604150486/_IGB2881_1_ibl8zv.jpg"

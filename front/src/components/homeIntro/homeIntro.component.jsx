@@ -7,7 +7,9 @@ export const HomeIntro = () => {
   return (
     <div className="Home-Intro-Container">
 
-      <img className="Home-Intro-Image" src={YolsPortada} height="200" alt="Home Page" />
+      <img className="Home-Intro-Image"
+        src={YolsPortada}
+        alt="Home Page" />
 
       <  HomeIntroSection />
     </div>
