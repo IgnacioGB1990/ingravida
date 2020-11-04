@@ -1,8 +1,10 @@
 .Home-Intro-Section-Container{
-  border:1px solid red;
+  position: absolute;
   text-align:center;
   max-width:80%;
-  transform: translate(11%,-420%);
+  top:20%;
+  left:15%;
+  height:40%;
 } 
 
 .Home-Intro-Section-Text{
@@ -17,16 +19,44 @@
   color:white;
   font-size: 19px;
   font-weight: 800;
-  
 }
 
+.Home-Intro-Button-Container{
+  padding-top:50px;
+  height:20%;
+  color:white;
+  transition: transform .2s;
+}
+
+.Home-Intro-Button-Container:hover{
+  transform: scale(1.1);
+}
+
+.abcButton{
+  position:relative;
+  top:30%;
+  text-decoration: none;
+  color:black;
+  background-color:white;
+  padding: 12px 20px;
+  border: 1 px solid yellow;
+  font-weight: bold;
+}
+
+.abcButton:hover{
+  color:black;
+  background-color: #E9FFAA;
+}
 
 @media screen and (max-width:960px){
 
   .Home-Intro-Section-Container{
-    transform: translate(5%,-1%);
-
-    max-width:90%;
+    position:relative;
+    max-width:100%;
+    top:0%;
+    left:0%;
+    height:180px;
+    
   }
 
   .Home-Intro-Section-Text{
@@ -40,4 +70,35 @@
     font-size: 16px;
   }
 
+  .Home-Intro-Button-Container{
+    all:none;
+    position: relative;
+    color:black;
+    margin-bottom:1%;
+    padding-top:1px; 
+    font-size: 15px;
+    border:1px solid black;
+    border-radius: solid 80px;
+    width:70vw;
+    left:10%;
+    text-align:center;
+  }
+
+  .Home-Intro-Button-Container:hover{
+    all:none; 
+    background-color: #E9FFAA;
+  }
+
+  .abcButton{
+    border:1px solid black;
+  padding: 5px 38vw;
+  top:20%;
+  
+  text-align: center;
+  }
+
+  .abcButton:hover{
+
+    
+  }
 }
