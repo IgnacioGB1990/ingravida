@@ -1,5 +1,5 @@
 import React from 'react'
-import { YolsPortada } from "../../components/images/utils"
+import { FotoOndulada, FotoRizada, FotoExtraRizada } from "../../components/images/utils"
 import "./homeTest.styles.css"
 
 export const HomeTest = () => {
@@ -15,7 +15,12 @@ export const HomeTest = () => {
              nuestro cuestionario.</h4>
           <a className="testButton" href="/test">Responde a nuestro cuestionario</a>
         </div>
-        <div className="Home-Test-Section-Right"></div>
+        <div className="Home-Test-Section-Right">
+          <img class="ondulado" alt="ondulado" width="691.19" height="450" src={FotoOndulada} />
+          <img class="rizado" alt="rizado" width="691.19" height="450" src={FotoRizada} />
+          <img class="superRizado" alt="superRizado" width="691.19" height="450" src={FotoExtraRizada} />
+
+        </div>
       </div>
     </div>
   )
