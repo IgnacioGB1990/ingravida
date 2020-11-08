@@ -1,6 +1,7 @@
 import React from 'react'
 import { FotoOndulada, FotoRizada, FotoExtraRizada } from "../../components/images/utils"
 import "./homeTest.styles.css"
+import "./homeTest.styles.scss"
 
 export const HomeTest = () => {
   return (
@@ -16,10 +17,15 @@ export const HomeTest = () => {
           <a className="testButton" href="/test">Responde a nuestro cuestionario</a>
         </div>
         <div className="Home-Test-Section-Right">
-          <img class="ondulado" alt="ondulado" width="691.19" height="450" src={FotoOndulada} />
-          <img class="rizado" alt="rizado" width="691.19" height="450" src={FotoRizada} />
-          <img class="superRizado" alt="superRizado" width="691.19" height="450" src={FotoExtraRizada} />
-
+          <article class="slide">
+            <img alt="ondulado" width="691.19" height="450" src={FotoOndulada} />
+          </article>
+          <article class="slide">
+            <img alt="rizado" width="691.19" height="450" src={FotoRizada} />
+          </article>
+          <article class="slide">
+            <img alt="superRizado" width="691.19" height="450" src={FotoExtraRizada} />
+          </article>
         </div>
       </div>
     </div>

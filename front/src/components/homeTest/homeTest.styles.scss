@@ -1,0 +1,71 @@
+$slideDuration: 2; // seconds
+$slideNum: 3;
+
+@mixin loop($name, $duration, $delay) {
+  -webkit-animation: $name #{$duration}s #{$delay}s infinite;
+  -moz-animation: $name #{$duration}s #{$delay}s infinite;
+  animation: $name #{$duration}s #{$delay}s infinite;
+}
+
+@mixin slide() {
+  @for $i from 1 through $slideNum {
+    .slide:nth-child( #{$i} ) {
+      @include loop( Home-Test-Section-Right, ($slideNum * $slideDuration), (($i - 1) * $slideDuration) );
+    }
+  }
+}
+
+@mixin keyframes() {
+
+  @-webkit-keyframes Home-Test-Section-Right {
+    0% {
+      opacity:1;
+    }
+    25% {
+      opacity:1;
+    }
+    33% {
+      opacity:0;
+    }
+    86% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+
+  @keyframes Home-Test-Section-Right {
+    0% {
+      opacity:1;
+    }
+    25% {
+      opacity:1;
+    }
+    33% {
+      opacity:0;
+    }
+    86% {
+      opacity:0;
+    }
+    100% {
+      opacity:1;
+    }
+  }
+}
+
+
+.Home-Test-Section-Right {
+  position: relative;
+}
+.slide {
+  position: absolute;
+  top: 0;
+}
+.slide:first-child {
+  position: static;
+}
+
+@include slide();
+
+@include keyframes();
