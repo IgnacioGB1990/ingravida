@@ -14,7 +14,7 @@ export const HomeTest = () => {
           <h4 className="Left-Description">¿No estás segura de cuáles son los mejores productos para ti?
           Encuentra tu rutina personalizada perfecta para ti gracias a
              nuestro cuestionario.</h4>
-          <a className="testButton" href="/test">Responde a nuestro cuestionario</a>
+          <a className="testButton" href="/test">Haz el test</a>
         </div>
         <div className="Home-Test-Section-Right">
           <article class="slide">

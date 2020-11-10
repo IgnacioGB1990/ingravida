@@ -69,3 +69,15 @@ $slideNum: 3;
 @include slide();
 
 @include keyframes();
+
+
+@media screen and (max-width:960px){
+
+
+  .Home-Test-Section-Right {
+    display:none;
+  
+  
+  }
+
+}

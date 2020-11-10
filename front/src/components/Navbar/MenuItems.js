@@ -1,12 +1,12 @@
 export const MenuItems = [
   {
-    title: "El ABC de los rizos",
-    url: "abc",
+    title: "Haz el test",
+    url: "test",
     cName: "nav-links"
   },
   {
-    title: "Cuestionario sobre rizos",
-    url: "test",
+    title: "Tutoriales",
+    url: "abc",
     cName: "nav-links"
   },
   {
@@ -15,13 +15,12 @@ export const MenuItems = [
     cName: "nav-links"
   },
   {
-    title: "Contacto",
+    title: "Conócenos",
     url: "contacto",
     cName: "nav-links"
   },
-
   {
-    title: "Iniciar sesión",
+    title: "Inicia sesión",
     url: "inicio",
     cName: "nav-links"
     // cName: "nav-links-mobile"
