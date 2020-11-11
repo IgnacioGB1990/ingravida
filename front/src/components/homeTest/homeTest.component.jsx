@@ -3,7 +3,7 @@ import { FotoOndulada, FotoRizada, FotoExtraRizada } from "../../components/imag
 import "./homeTest.styles.css"
 import "./homeTest.styles.scss"
 
-export const HomeTest = () => {
+const HomeTest = () => {
   return (
     <div className="Home-Test-Container">
 

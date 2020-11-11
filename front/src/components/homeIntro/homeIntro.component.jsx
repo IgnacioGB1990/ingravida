@@ -3,7 +3,7 @@ import { YolsPortada } from "../../components/images/utils"
 import { HomeIntroSection } from "../homeIntroSection/homeIntroSection.component"
 import "./homeIntro.styles.css"
 
-export const HomeIntro = () => {
+const HomeIntro = () => {
   return (
     <div className="Home-Intro-Container">
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import HomeIntro from "../../components/homeIntro/homeIntro.component"
 import HomeTest from "../../components/homeTest/homeTest.component"
+import HomeIngredients from '../../components/homeIngredients/homeIngredients.component';
 
 
 function HomePage() {
@@ -10,6 +11,7 @@ function HomePage() {
 
       <HomeIntro />
       <HomeTest />
+      <HomeIngredients />
 
     </div>
 
