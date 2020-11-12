@@ -1,18 +1,41 @@
-.Home-Ingredients-Container{
-  width: 100%;
-  height:600px;
-  background-color:red;
-
- 
+.Container{
+width: 100%;
+height:600px;
+top:50px;
+position:relative;
 
 }
 
-.Home-Ingredients-Section{
-  position:absolute;
-  margin-top:10%;
-  background-color:yellow;
-  width: 80%;
-  height:300px;
+.Section{
+  top:15%;
+  left:5%;
+  width:90%;
+  height:75%;
+  position: absolute;
+  display:flex;
+  flex-direction: column;
+  align-content:space-between;
+  background-color: #f7f7f7;
+}
 
-  left:10%;
+.Header{
+/* padding-top:3%;
+padding-left:28%; */
+font-weight:bold;
+font-size:3.2em;
+font-family: Canela Deck,serif;
+text-transform: lowercase;
+text-align: center;
+}
+
+.IngredientsBox{
+  background-color: blue;
+  width:100%;
+  height:100px;
+}
+
+.Button{
+  background-color: green;
+  width:100%;
+  height:100px;
 }
