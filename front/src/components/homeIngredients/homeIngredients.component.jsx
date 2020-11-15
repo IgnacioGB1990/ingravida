@@ -1,5 +1,5 @@
 import React from 'react'
-
+import { ingredientItems } from "./ingredientItems"
 import "./homeIngredients.styles.css"
 
 const HomeIngredients = () => {

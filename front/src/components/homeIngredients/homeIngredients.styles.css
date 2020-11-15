@@ -14,28 +14,31 @@ position:relative;
   position: absolute;
   display:flex;
   flex-direction: column;
-  align-content:space-between;
+
+ 
   background-color: #f7f7f7;
 }
 
 .Header{
-/* padding-top:3%;
-padding-left:28%; */
+margin-top:1%;
+/* padding-left:28%;  */
 font-weight:bold;
-font-size:3.2em;
+font-size:2.8em;
 font-family: Canela Deck,serif;
 text-transform: lowercase;
 text-align: center;
+height:15%
 }
 
 .IngredientsBox{
   background-color: blue;
   width:100%;
-  height:100px;
+  height:80%;
 }
 
 .Button{
   background-color: green;
   width:100%;
-  height:100px;
+  height:10%;
+  
 }
