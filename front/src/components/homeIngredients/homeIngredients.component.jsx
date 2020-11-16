@@ -10,7 +10,9 @@ const HomeIngredients = () => {
           solo las cosas buenas
         </div>
         <div className="IngredientsBox">
+          <div className="IngredientsDisplay">
 
+          </div>
         </div>
         <div className="Button">
 

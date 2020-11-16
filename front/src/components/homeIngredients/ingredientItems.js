@@ -1,13 +1,33 @@
 export const ingredientItems = [
   {
-    title: "Haz el test",
-    url: "test",
-    cName: "nav-links"
+    ingredient: "Sin sulfatos",
+    svg: "",
+    cName: ""
   },
   {
-    title: "Tutoriales",
-    url: "abc",
-    cName: "nav-links"
+    ingredient: "Sin siliconas",
+    svg: "",
+    alt: ""
+  },
+  {
+    ingredient: "Sin parabenos",
+    svg: "",
+    cName: ""
+  },
+  {
+    ingredient: "Sin aceites minerales",
+    svg: "",
+    cName: ""
+  },
+  {
+    ingredient: "No testado en animales",
+    svg: "",
+    cName: ""
+  },
+  {
+    ingredient: "Made in Spain",
+    svg: "",
+    cName: ""
   }
 
 ]
