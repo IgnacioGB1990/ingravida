@@ -1,32 +1,37 @@
 export const ingredientItems = [
   {
-    ingredient: "Sin sulfatos",
-    svg: "",
+    name: "Sin sulfatos nocivos",
+    svg: "fas fa-spinner",
     cName: ""
   },
   {
-    ingredient: "Sin siliconas",
-    svg: "",
+    name: "Sin siliconas",
+    svg: "fas fa-wrench",
     alt: ""
   },
   {
-    ingredient: "Sin parabenos",
-    svg: "",
+    name: "Sin parabenos",
+    svg: "fas fa-snowflake",
     cName: ""
   },
   {
-    ingredient: "Sin aceites minerales",
-    svg: "",
+    name: "Sin aceites minerales",
+    svg: "fas fa-yin-yang",
     cName: ""
   },
   {
-    ingredient: "No testado en animales",
-    svg: "",
+    name: "No testado en animales",
+    svg: "fas fa-broom",
     cName: ""
   },
   {
-    ingredient: "Made in Spain",
-    svg: "",
+    name: "Vegano",
+    svg: "fas fa-frog",
+    cName: ""
+  },
+  {
+    name: "Made in Spain",
+    svg: "fas fa-paint-roller",
     cName: ""
   }
 

@@ -11,7 +11,13 @@ const HomeIngredients = () => {
         </div>
         <div className="IngredientsBox">
           <div className="IngredientsDisplay">
-
+            {ingredientItems.map((ingredient, index) => {
+              return (
+                <ul className="Elements" key={index}>
+                  <i className={ingredient.svg}></i>  {ingredient.name}
+                </ul>
+              )
+            })}
           </div>
         </div>
         <div className="Button">
