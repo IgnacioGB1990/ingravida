@@ -14,14 +14,15 @@ const HomeIngredients = () => {
             {ingredientItems.map((ingredient, index) => {
               return (
                 <ul className="Elements" key={index}>
-                  <i className={ingredient.svg}></i>  {ingredient.name}
+                  <i style={{ marginRight: 0.5 + 'em' }} className={ingredient.svg}></i>
+                  {ingredient.name}
                 </ul>
               )
             })}
           </div>
         </div>
-        <div className="Button">
-
+        <div className="ButtonContainer">
+          <a className="Button" href="/ingredientes">Saber más</a>
         </div>
       </div>
 
