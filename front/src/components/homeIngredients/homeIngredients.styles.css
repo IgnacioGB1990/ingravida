@@ -78,12 +78,12 @@ height:15%
 @media screen and (max-width:960px){
   
   .Container{
-    height:650px;
+    height:550px;
     width:100%;
     position: relative;
     top:1px;
     border:1px solid yellow;
-    flex-direction:row;
+    
     }
 
     .Section{
@@ -100,23 +100,29 @@ height:15%
 
       .IngredientsBox{
         width:100%;
-        height:70%;
-        border:1px solid blue;
-       
-        
+        height:100%;
       }
 
       .IngredientsDisplay{
+        flex-direction: column; 
+        justify-content: flex-start;
+      }
+
+      .Elements{
         width:100%;
-        display: flex;
-        flex-flow: column wrap;
-        border:1px solid red;
+        font-size:16px;
+        text-align:center;
+        height:30px;
+        padding:0%;
+        margin:3% 0%;
+        
+
       }
 
       .Button{
-        border:1px solid red;
         font-size:1.1em;
         border: 1px solid black; 
+        height:40px;
         font-weight:550;
         margin-top:0%;
         padding:2% 0px;
