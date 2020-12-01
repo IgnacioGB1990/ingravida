@@ -6,7 +6,7 @@ position:relative;
 }
 
 .Section{
-  top:15%;
+  top:5%;
   left:5%;
   width:90%;
   height:75%;
@@ -130,3 +130,16 @@ height:15%
         z-index: 1;
       }
 }
+
+
+@media screen and (min-width:1400px){
+
+  
+
+  .Section {
+    top:6%;
+   left:14.2%;
+    width:71.8%;
+    
+  }
+} 

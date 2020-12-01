@@ -29,7 +29,7 @@
 
 .Left-Header{
 padding-top:10%;
-font-size:3.2em;
+font-size:2.4em;
 font-family: Canela Deck,serif;
 text-transform: lowercase;
 text-align: center;
@@ -121,3 +121,10 @@ line-height: 0.9em;
 
 }
 
+@media screen and (min-width:1400px){
+
+  .Home-Test-Section{
+   justify-content: center;
+    
+  }
+} 

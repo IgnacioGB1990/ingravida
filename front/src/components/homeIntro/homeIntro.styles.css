@@ -27,13 +27,11 @@
 
  /* BIG SCREEN */
  /* Activates when resolution is bigger than 1200px */
- @media screen and (min-width:1200px){
+ @media screen and (min-width:1400px){
 
-  .Home-Intro-Image {
-    /* border:1px solid yellow; */
+  .Home-Intro-Container {
+
     
-   
-
+    
   }
-
-}
+} 

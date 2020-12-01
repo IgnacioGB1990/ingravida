@@ -5,7 +5,7 @@ const HomeInstagram = () => {
   return (
     <div className="ContainerInstagram">
 
-      This is the instagram page
+      Comparte tu viaje de rizos en #ingravida
 
     </div>
   )
