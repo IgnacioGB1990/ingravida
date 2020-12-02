@@ -1,10 +1,36 @@
 .ContainerInstagram{
   background-color: #E9FFAA;
   height:500px;
-
-  font-size:3.2em;
   font-family: Canela Deck,serif;
   text-transform: lowercase;
-  text-align: center;
- 
+  text-align: center; 
 }
+
+.HeaderInstagram{
+  font-size:2.2em;
+}
+
+.InstaImagesContainer{
+  background-color:green;
+  display:flex;
+  flex-direction:row;
+  align-items:stretch;
+  
+}
+
+.InstaImages{
+  width:200px;
+  height:150px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.ContainerImages{
+ background-color: red;
+ height:400px;
+ width:80%;
+ margin-left: auto;
+ margin-right: auto;
+}
+
