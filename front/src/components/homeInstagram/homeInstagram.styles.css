@@ -1,6 +1,6 @@
 .ContainerInstagram{
   background-color: #E9FFAA;
-  height:500px;
+  height:600px;
   font-family: Canela Deck,serif;
   text-transform: lowercase;
   text-align: center; 
@@ -10,27 +10,28 @@
   font-size:2.2em;
 }
 
-.InstaImagesContainer{
-  background-color:green;
-  display:flex;
-  flex-direction:row;
-  align-items:stretch;
-  
-}
+.ContainerImages{
+  /* background-color: white; */
+  height:500px;
+  width:80%;
+  margin-left: auto;
+  margin-right: auto; 
+ }
 
 .InstaImages{
   width:200px;
   height:150px;
   margin-left: auto;
   margin-right: auto;
+  transition: transform .2s;
+}
+
+.InstaImages:hover{
+  transform: scale(1.5);
+  cursor:pointer; 
+  
 }
 
 
-.ContainerImages{
- background-color: red;
- height:400px;
- width:80%;
- margin-left: auto;
- margin-right: auto;
-}
+
 
