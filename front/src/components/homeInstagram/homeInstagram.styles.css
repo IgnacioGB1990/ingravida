@@ -1,17 +1,30 @@
+/* CAROUSEL ADDED */
+.carouselContainer{
+  position:relative;
+}
+
+.ContainerBackground{
+  background-color: #E9FFAA;
+  height:650px;
+}
+
+
 .ContainerInstagram{
   background-color: #E9FFAA;
   height:600px;
-  font-family: Canela Deck,serif;
   text-transform: lowercase;
   text-align: center; 
 }
 
 .HeaderInstagram{
-  font-size:2.2em;
+  padding-top:2%;
+  font-size:3em;
+  font-family: Canela Deck,serif;
+  text-align: center;
 }
 
 .ContainerImages{
-  /* background-color: white; */
+  margin-top:3%;
   height:500px;
   width:80%;
   margin-left: auto;
@@ -21,6 +34,7 @@
 .InstaImages{
   width:200px;
   height:150px;
+ 
   margin-left: auto;
   margin-right: auto;
   transition: transform .2s;
@@ -32,6 +46,21 @@
   
 }
 
+@media screen and (max-width:960px){
+
+
+  .ContainerInstagram{
+  padding-top:15%;
+  }
+  
+
+  .HeaderInstagram{
+    padding-top:0%;
+    font-size:18px;
+   
+  }
+
+}
 
 
 

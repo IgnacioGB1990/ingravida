@@ -17,13 +17,13 @@ const HomeTest = () => {
           <a className="testButton" href="/test">Haz el test</a>
         </div>
         <div className="Home-Test-Section-Right">
-          <article class="slide">
+          <article className="slide">
             <img alt="ondulado" width="691.19" height="450" src={FotoOndulada} />
           </article>
-          <article class="slide">
+          <article className="slide">
             <img alt="rizado" width="691.19" height="450" src={FotoRizada} />
           </article>
-          <article class="slide">
+          <article className="slide">
             <img alt="superRizado" width="691.19" height="450" src={FotoExtraRizada} />
           </article>
         </div>

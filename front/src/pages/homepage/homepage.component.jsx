@@ -14,7 +14,7 @@ function HomePage() {
       <HomeTest />
       <HomeIngredients />
       <HomeInstagram />
-      <HomeFooter />
+      {/* <HomeFooter /> */}
 
     </div>
 
