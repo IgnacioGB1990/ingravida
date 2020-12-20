@@ -10,6 +10,8 @@ import ShopPage from "./pages/shop/shop.component"
 import ContactPage from "./pages/contact/contact.component"
 import SignInPage from "./pages/signIn/signIn.component"
 
+
+
 function App() {
   return (
     <Router>
