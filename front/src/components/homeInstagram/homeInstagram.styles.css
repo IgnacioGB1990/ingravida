@@ -20,6 +20,7 @@
 
 
 .ContainerImages{
+  overflow:hidden;
   height:500px;
   width:80%;
   padding-top:1.5%;
@@ -52,9 +53,13 @@
 
   .HeaderInstagram{
     padding-top:0%;
-    font-size:18px;
+    font-size:22px;
    
   }
+
+  .ContainerImages{
+    height:470px;
+   }
 
 }
 
