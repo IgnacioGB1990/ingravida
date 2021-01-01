@@ -9,28 +9,28 @@ const HomeFooter = () => {
 
 
       <div className="social-container">
-        <a href="www.youtube.com "
+        <a href="https://www.youtube.com "
           target="_blank"
           className="youtube social"
         >
           <FontAwesomeIcon icon={faYoutube} size="2x" />
         </a>
 
-        <a href="www.facebook.com "
+        <a href="https://www.facebook.com "
           target="_blank"
           className="facebook social"
         >
           <FontAwesomeIcon icon={faFacebook} size="2x" />
         </a>
 
-        <a href="www.youtube.com "
+        <a href="https://www.twitter.com "
           target="_blank"
           className="twitter social"
         >
           <FontAwesomeIcon icon={faTwitter} size="2x" />
         </a>
 
-        <a href="www.instagram.com "
+        <a href="https://www.instagram.com "
           target="_blank"
           className="instagram social"
         >

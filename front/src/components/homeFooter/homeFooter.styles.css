@@ -1,11 +1,13 @@
 .ContainerFooter{
-border:1px solid red;
-height:200px;
+height:120px;
 }
 
 .social-container{
-  background-color: turquoise;
-  padding:25px 50px;
+  margin:auto;
+  padding:50px 50px;
+  width:30%;
+  height:100%;
+  text-align:center;
 }
 
 a.social{
@@ -32,4 +34,20 @@ a.twitter{
 
 a.instagram{
   color:black;
+}
+
+
+@media screen and (max-width:960px){
+
+  .ContainerFooter{
+    height:100px;
+    }
+
+  .social-container{
+    width:100%;
+    padding:35px 50px;
+  }
+  
+
+
 }
