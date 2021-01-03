@@ -1,0 +1,16 @@
+.collection-preview {
+  margin-top:50px;
+  display: flex;
+  flex-direction: column;
+ 
+
+  .title {
+    font-size: 12px;
+    
+  }
+
+  .footer {
+   display:flex;
+   flex-direction:row;
+  }
+}
