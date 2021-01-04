@@ -1,16 +1,24 @@
 .collection-preview {
-  margin-top:50px;
   display: flex;
   flex-direction: column;
- 
+  width: 20%;
+}
 
   .title {
     font-size: 12px;
-    
+  }
+
+  .price{
+    font-size: 12px;
+  }
+
+  .image-size{
+    width:200px;
+    height:280px;
   }
 
   .footer {
    display:flex;
    flex-direction:row;
+   background-color: blue;
   }
-}

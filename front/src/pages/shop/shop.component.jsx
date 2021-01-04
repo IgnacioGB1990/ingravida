@@ -1,5 +1,7 @@
 import React from 'react';
 
+import "./shop.styles.css"
+
 import SHOP_DATA from "../../redux/shop/shop.data"
 import CollectionPreview from "../../components/shop/collection-preview/collection-preview.component"
 
@@ -21,14 +23,19 @@ class ShopPage extends React.Component {
     console.log("This is the ARRAY of SHOP DATA", { collections })
     return (
       <div className="shop-page">
+        <div className="shop-header">
+          <div className="shop-all-title">
+            shop all
+          </div>
+          <div className="shop-all-title-des">
+            champús, acondicionadores, geles y packs de ahorro
+          </div>
+        </div>
         {
           collections.map(({ id, ...otherCollectionProps }) => (
             <CollectionPreview key={id} {...otherCollectionProps} />
             //console.log("this is the otherCollectionProps : ", { ...otherCollectionProps })
           ))
-
-
-
         }
 
       </div>

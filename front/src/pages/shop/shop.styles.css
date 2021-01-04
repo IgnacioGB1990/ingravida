@@ -1,0 +1,20 @@
+.shop-page{
+  padding-top:50px;
+}
+
+.shop-header{
+  background-color:#E9FFAA;
+  text-align: center;
+  height:200px;
+}
+
+.shop-all-title{
+  padding-top:50px;
+  font-size:20px;
+  font-weight: bold;
+}
+
+.shop-all-title-des{
+  padding-top:10px;
+  font-size:20px;
+}

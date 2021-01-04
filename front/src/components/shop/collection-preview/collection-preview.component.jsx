@@ -6,12 +6,11 @@ const CollectionPreview = ({ name, imageUrl, price }) => (
 
 
   < div className="collection-preview" >
-    <h1 className="title">{name}</h1>
+    <img className="image-size" src={imageUrl} />
     <div className="footer">
 
-
-      <img src={imageUrl} />
-      <h3>{price}</h3>
+      <h1 className="title">{name}</h1>
+      <h3 className="price">{price} €</h3>
 
     </div>
   </div >
