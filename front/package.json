@@ -18,7 +18,8 @@
     "react-router-dom": "^5.2.0",
     "react-scripts": "3.4.3",
     "redux": "^4.0.5",
-    "scss": "^0.2.4"
+    "scss": "^0.2.4",
+    "styled-components": "^5.2.1"
   },
   "scripts": {
     "start": "react-scripts start",

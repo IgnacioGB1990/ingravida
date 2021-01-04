@@ -25,19 +25,19 @@ class ShopPage extends React.Component {
       <div className="shop-page">
         <div className="shop-header">
           <div className="shop-all-title">
-            shop all
+            Catálogo de Productos
           </div>
           <div className="shop-all-title-des">
             champús, acondicionadores, geles y packs de ahorro
           </div>
         </div>
-        {
-          collections.map(({ id, ...otherCollectionProps }) => (
+        <div className="shampo-collection">
+
+          {collections.map(({ id, ...otherCollectionProps }) => (
             <CollectionPreview key={id} {...otherCollectionProps} />
             //console.log("this is the otherCollectionProps : ", { ...otherCollectionProps })
-          ))
-        }
-
+          ))}
+        </div>
       </div>
     );
   }

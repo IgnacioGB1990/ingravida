@@ -1,24 +1,36 @@
 .collection-preview {
+  width: 22%;
   display: flex;
   flex-direction: column;
-  width: 20%;
+  height: 350px;
+  align-items: center;
 }
+
+.image-size{
+  width: 80%;
+  height: 85%;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 5px;
+}
+
+.footer {
+  width: 80%;
+   height: 5%;
+   display: flex;
+   justify-content: space-between;
+   font-size: 18px;
+ }
 
   .title {
     font-size: 12px;
+    width: 80%;
+      margin-bottom: 15px;
   }
-
+  
   .price{
     font-size: 12px;
+    width: 20%;
   }
 
-  .image-size{
-    width:200px;
-    height:280px;
-  }
-
-  .footer {
-   display:flex;
-   flex-direction:row;
-   background-color: blue;
-  }
+ 

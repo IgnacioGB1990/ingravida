@@ -1,6 +1,7 @@
 import React from 'react'
 
 import "./collection-preview.styles.scss"
+import CustomButton from "../custom-button/custom-button.component"
 
 const CollectionPreview = ({ name, imageUrl, price }) => (
 
@@ -9,10 +10,14 @@ const CollectionPreview = ({ name, imageUrl, price }) => (
     <img className="image-size" src={imageUrl} />
     <div className="footer">
 
-      <h1 className="title">{name}</h1>
-      <h3 className="price">{price} €</h3>
+      <span className="title">{name}</span>
+      <span className="price">{price} €</span>
 
     </div>
+    <CustomButton  >
+      Add to cart
+       </CustomButton>
+
   </div >
 )
 
