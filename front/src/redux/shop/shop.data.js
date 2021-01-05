@@ -3,37 +3,37 @@ const SHOP_DATA = [
   {
     id: 1,
     name: 'Champu',
-    imageUrl: 'https://i.ibb.co/ZYW3VTp/brown-brim.png',
+    imageUrl: 'https://res.cloudinary.com/djkhnzte2/image/upload/v1609849888/_IGB0525_d9auzz.jpg',
     price: 25
   },
   {
     id: 2,
     name: 'Acondicionador',
-    imageUrl: 'https://i.ibb.co/ypkgK0X/blue-beanie.png',
+    imageUrl: 'https://res.cloudinary.com/djkhnzte2/image/upload/q_auto/v1609849889/_IGB0524_aztmjv.jpg',
     price: 18
   },
   {
     id: 3,
     name: 'Mascarilla',
-    imageUrl: 'https://i.ibb.co/QdJwgmp/brown-cowboy.png',
+    imageUrl: 'https://res.cloudinary.com/djkhnzte2/image/upload/q_auto/v1609849885/_IGB0528_dlnnjy.jpg',
     price: 35
   },
   {
     id: 4,
     name: 'Gel',
-    imageUrl: 'https://i.ibb.co/RjBLWxB/grey-brim.png',
+    imageUrl: 'https://res.cloudinary.com/djkhnzte2/image/upload/q_auto/v1609849879/_IGB0526_wsw9rc.jpg',
     price: 25
   },
   {
     id: 5,
     name: 'Cleanser',
-    imageUrl: 'https://i.ibb.co/YTjW3vF/green-beanie.png',
+    imageUrl: 'https://res.cloudinary.com/djkhnzte2/image/upload/q_auto/v1609849872/_IGB0529_a9ucia.jpg',
     price: 18
   },
   {
     id: 6,
     name: 'Aceite',
-    imageUrl: 'https://i.ibb.co/rKBDvJX/palm-tree-cap.png',
+    imageUrl: 'https://res.cloudinary.com/djkhnzte2/image/upload/q_auto/v1609849705/_IGB0525_izv5xc.jpg',
     price: 14
   }
 

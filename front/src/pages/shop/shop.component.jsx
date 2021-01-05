@@ -24,7 +24,6 @@ class ShopPage extends React.Component {
     return (
       <div className="shop-page">
         <div className="white-bar">
-
         </div>
         <div className="shop-header">
           <div className="shop-all-title">
@@ -35,14 +34,15 @@ class ShopPage extends React.Component {
           </div>
         </div>
         <div className="white-bar">
-
         </div>
-        <div className="shampo-collection">
+        <div className="products-collection">
 
           {collections.map(({ id, ...otherCollectionProps }) => (
             <CollectionPreview key={id} {...otherCollectionProps} />
             //console.log("this is the otherCollectionProps : ", { ...otherCollectionProps })
           ))}
+        </div>
+        <div className="white-bar">
         </div>
       </div>
     );
