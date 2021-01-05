@@ -23,6 +23,9 @@ class ShopPage extends React.Component {
     console.log("This is the ARRAY of SHOP DATA", { collections })
     return (
       <div className="shop-page">
+        <div className="white-bar">
+
+        </div>
         <div className="shop-header">
           <div className="shop-all-title">
             Catálogo de Productos
@@ -30,6 +33,9 @@ class ShopPage extends React.Component {
           <div className="shop-all-title-des">
             champús, acondicionadores, geles y packs de ahorro
           </div>
+        </div>
+        <div className="white-bar">
+
         </div>
         <div className="shampo-collection">
 
