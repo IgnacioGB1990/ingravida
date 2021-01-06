@@ -33,7 +33,7 @@ class ShopPage extends React.Component {
             champús, acondicionadores, geles y packs de ahorro
           </div>
         </div>
-        <div className="white-bar">
+        <div className="white-bar2">
         </div>
         <div className="products-collection">
 
@@ -42,7 +42,7 @@ class ShopPage extends React.Component {
             //console.log("this is the otherCollectionProps : ", { ...otherCollectionProps })
           ))}
         </div>
-        <div className="white-bar">
+        <div className="white-bar2">
         </div>
       </div>
     );

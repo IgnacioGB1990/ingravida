@@ -1,5 +1,6 @@
 //img 5120 x 2400
 export const YolsPortada = "https://res.cloudinary.com/djkhnzte2/image/upload/q_auto/v1604150486/_IGB2881_1_ibl8zv.jpg"
+export const YolsPortada2 = "https://res.cloudinary.com/djkhnzte2/image/upload/v1604147000/_IGB2881_as1gfn.jpg"
 //img 
 export const FotoOndulada = "https://res.cloudinary.com/djkhnzte2/image/upload/q_auto/v1604572673/_IGB9273_wfgxen.jpg"
 export const FotoRizada = "https://res.cloudinary.com/djkhnzte2/image/upload/q_auto/v1604572658/_IGB9272_rrevs4.jpg"

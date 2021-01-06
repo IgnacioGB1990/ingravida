@@ -11,11 +11,11 @@ const CollectionPreview = ({ name, imageUrl, price }) => (
     <div className="footer">
 
       <span className="title">{name}</span>
-      <span className="price">{price} €</span>
+      <span className="price">{price}€</span>
 
     </div>
     <CustomButton  >
-      Add to cart
+      Añadir a la cesta
        </CustomButton>
 
   </div >

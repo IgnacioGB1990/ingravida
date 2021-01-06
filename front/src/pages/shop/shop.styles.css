@@ -11,9 +11,10 @@
 
 .shop-all-title{
   padding-top:40px;
-  font-size:20px;
+  font-size:22px;
   font-weight: bold;
   font-family: Canela Deck,serif;
+  letter-spacing: .01em;
 }
 
 .shop-all-title-des{
@@ -23,14 +24,22 @@
 }
 
 .white-bar{
-  height:100px;
+  height:80px;
+  box-shadow: 1px 1px #d9d9d9; 
+}
+
+.white-bar2{
+  height:30px;
   box-shadow: 1px 1px #d9d9d9; 
 }
 
 .products-collection{
-  padding-top:50px;
+  /* background-color:blue; */
+  padding-top:10px;
   display:flex;
+  
   flex-direction: row;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   
 }

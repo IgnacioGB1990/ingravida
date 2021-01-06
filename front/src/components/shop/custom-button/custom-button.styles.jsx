@@ -1,8 +1,8 @@
 import styled, { css } from "styled-components"
 
 const buttonStyles = css`
-background-color: black;
-color: white;
+background-color: #E9FFAA;
+color: black;
 border: none;
 
 &:hover{
@@ -48,17 +48,17 @@ const getButtonStyles = props => {
 
 export const CustomButtonContainer = styled.button`
 min-width: 165px;
-  width: auto;
+  width: 100%;
   height: 50px;
   letter-spacing: 0.5px;
   line-height: 50px;
   padding: 0 35px 0 35px;
-  font-size: 12px;
+  font-size: 14px;
   
 
   text-transform: uppercase;
-  font-family: 'Open Sans Condensed';
-  font-weight: bolder;
+  font-family: 'Canela Deck';
+  /* font-weight: bolder; */
   
   cursor: pointer;
   display:flex;

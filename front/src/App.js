@@ -8,7 +8,7 @@ import ABCPage from "./pages/abc/abc.component"
 import TestPage from "./pages/test/test.component"
 import ShopPage from "./pages/shop/shop.component"
 import ContactPage from "./pages/contact/contact.component"
-import SignInPage from "./pages/signIn/signIn.component"
+import SignInAndSignUpPage from "./pages/sign-in-and-sign-up/sign-in-and-sign-up.component"
 
 
 
@@ -23,7 +23,7 @@ function App() {
           <Route path="/test" component={TestPage} />
           <Route path="/tienda" component={ShopPage} />
           <Route path="/contacto" component={ContactPage} />
-          <Route path="/inicio" component={SignInPage} />
+          <Route path="/inicio" component={SignInAndSignUpPage} />
         </Switch>
       </div>
     </Router>

@@ -1,40 +1,46 @@
 .collection-preview {
-  width: 22%;
+  width: 300px;
   display: flex;
   flex-direction: column;
-  height: 350px;
+  height: 480px;
   align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-bottom:3%;
+  // background-color: aqua;
 }
 
 .image-size{
-  width: 90%;
+  width: 100%;
   height: 80%;
   background-size: cover;
   background-position: center;
-  margin-bottom: 5px;
+  padding: 4% 0px;
 }
 
 .footer {
-  width: 80%;
-   height: 5%;
-   display: flex;
-   justify-content: space-between;
-   font-size: 18px;
+  width: 100%;
+  height: 5%;
+  display: flex;
+  font-size: 18px;
+  // background-color: green; 
  }
 
   .title {
-    font-size: 12px;
-    width: 80%;
-      margin-bottom: 15px;
-      font-weight:bold;
-      font-family: Canela Deck,serif;
+  font-size: 18px;
+  width: 80%;
+  font-family: Canela Deck,serif;
   }
   
   .price{
-    font-size: 12px;
-    font-weight:bold;
+    font-size: 16px;
+    letter-spacing: .1em;
     width: 20%;
-    
+  
+    color:#454545;
+    font-family: linetocircularbold,sans-serif;
+    justify-content: center;
+    background-color: bisque;
   }
 
  
