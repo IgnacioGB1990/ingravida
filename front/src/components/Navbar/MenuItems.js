@@ -21,9 +21,9 @@ export const MenuItems = [
   //   cName: "nav-links"
   // },
   {
-    title: "Inicia sesión",
+    title: "",
     url: "inicio",
-    cName: "nav-links"
+    cName: "far fa-user fa-lg"
     // cName: "nav-links-mobile"
   }
 ]

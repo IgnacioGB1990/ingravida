@@ -1,8 +1,9 @@
 import React, { useState } from 'react'
 import { MenuItems } from "./MenuItems"
 import { Button } from "./Button.js"
-import "./Navbar.styles.css"
+import "./Navbar.styles.scss"
 
+import { auth } from "../signInUp/firebase/firebase.utils"
 
 
 export const Navbar = () => {
@@ -20,12 +21,14 @@ export const Navbar = () => {
         {MenuItems.map((item, index) => {
           return (
             <li key={index}>
+
               <a className={item.cName} href={item.url}>
                 {item.title}
               </a>
             </li>
           )
         })}
+
       </ul>
       {/* <Button >Inicio</Button> */}
     </nav >

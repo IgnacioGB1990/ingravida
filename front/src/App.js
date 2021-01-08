@@ -9,25 +9,49 @@ import TestPage from "./pages/test/test.component"
 import ShopPage from "./pages/shop/shop.component"
 import ContactPage from "./pages/contact/contact.component"
 import SignInAndSignUpPage from "./pages/sign-in-and-sign-up/sign-in-and-sign-up.component"
+import { auth } from "./components/signInUp/firebase/firebase.utils"
 
 
+class App extends React.Component {
+  constructor() {
+    super();
 
-function App() {
-  return (
-    <Router>
-      <div className="App">
-        <Navbar />
-        <Switch>
-          <Route exact path="/" component={HomePage} />
-          <Route path="/abc" component={ABCPage} />
-          <Route path="/test" component={TestPage} />
-          <Route path="/tienda" component={ShopPage} />
-          <Route path="/contacto" component={ContactPage} />
-          <Route path="/inicio" component={SignInAndSignUpPage} />
-        </Switch>
-      </div>
-    </Router>
-  );
+    this.state = {
+      currentUser: null
+    }
+  }
+
+  unsubscribeFromAuth = null;
+
+
+  componentDidMount() {
+    this.unsubscribeFromAuth = auth.onAuthStateChanged(user => {
+      this.setState({ currentUser: user });
+      console.log("This is the currentuser logged in", user)
+    })
+  }
+
+  componentWillUnmount() {
+    this.unsubscribeFromAuth()
+  }
+
+  render() {
+    return (
+      <Router>
+        <div className="App">
+          <Navbar />
+          <Switch>
+            <Route exact path="/" component={HomePage} />
+            <Route path="/abc" component={ABCPage} />
+            <Route path="/test" component={TestPage} />
+            <Route path="/tienda" component={ShopPage} />
+            <Route path="/contacto" component={ContactPage} />
+            <Route path="/inicio" component={SignInAndSignUpPage} />
+          </Switch>
+        </div>
+      </Router>
+    );
+  }
 }
 
 export default App;
