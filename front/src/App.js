@@ -39,7 +39,7 @@ class App extends React.Component {
     return (
       <Router>
         <div className="App">
-          <Navbar />
+          <Navbar currentUser={this.state.currentUser} />
           <Switch>
             <Route exact path="/" component={HomePage} />
             <Route path="/abc" component={ABCPage} />

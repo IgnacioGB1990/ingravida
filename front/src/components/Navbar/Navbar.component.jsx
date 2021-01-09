@@ -2,12 +2,12 @@ import React, { useState } from 'react'
 import { MenuItems } from "./MenuItems"
 import { Button } from "./Button.js"
 import "./Navbar.styles.scss"
-
+import { Link } from "react-router-dom"
 import { auth } from "../signInUp/firebase/firebase.utils"
 
 
-export const Navbar = () => {
-
+export const Navbar = ({ currentUser }) => {
+  console.log("This is the current User?", currentUser)
   const [Display, setDisplay] = useState(false)
 
   return (
@@ -28,7 +28,12 @@ export const Navbar = () => {
             </li>
           )
         })}
-
+        {
+          currentUser ?
+            <div onClick={() => auth.signOut()}>OUT</div>
+            :
+            <Link href="/inicio">IN</Link>
+        }
       </ul>
       {/* <Button >Inicio</Button> */}
     </nav >
