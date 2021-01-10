@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom"
 import { FotoOndulada, FotoRizada, FotoExtraRizada } from "../../components/images/utils"
 import "./homeTest.styles.css"
 import "./homeTest.styles.scss"
@@ -14,7 +15,7 @@ const HomeTest = () => {
           <h4 className="Left-Description">¿No estás segura de cuáles son los mejores productos para ti?
           Encuentra tu rutina personalizada perfecta para ti gracias a
              nuestro cuestionario.</h4>
-          <a className="testButton" href="/test">Haz el test</a>
+          <Link className="testButton" to="/test">Haz el test</Link>
         </div>
         <div className="Home-Test-Section-Right">
           <article className="slide">

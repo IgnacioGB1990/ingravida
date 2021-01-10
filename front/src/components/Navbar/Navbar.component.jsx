@@ -22,17 +22,17 @@ export const Navbar = ({ currentUser }) => {
           return (
             <li key={index}>
 
-              <a className={item.cName} href={item.url}>
+              <Link className={item.cName} to={item.url}>
                 {item.title}
-              </a>
+              </Link>
             </li>
           )
         })}
         {
           currentUser ?
-            <div onClick={() => auth.signOut()}>OUT</div>
+            <div className="fas fa-power-off fa-lg" onClick={() => auth.signOut()}></div>
             :
-            <Link href="/inicio">IN</Link>
+            <Link className="far fa-user fa-lg" to="/inicio"></Link>
         }
       </ul>
       {/* <Button >Inicio</Button> */}

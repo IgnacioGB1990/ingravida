@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from "react-router-dom"
 import { ingredientItems } from "./ingredientItems"
 import "./homeIngredients.styles.css"
 
@@ -22,7 +23,7 @@ const HomeIngredients = () => {
           </div>
         </div>
         <div className="ButtonContainer">
-          <a className="Button" href="/ingredientes">Saber más</a>
+          <Link className="Button" to="/ingredientes">Saber más</Link>
         </div>
       </div>
 

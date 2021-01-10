@@ -137,7 +137,7 @@ display:none;
 
 
 
-
+//Log in 
 .far.fa-user.fa-lg{
   color:black;
   padding: 0.1rem 1rem;
@@ -150,7 +150,10 @@ transition: all 0.2s ease-out;
 
 }
 
-
+//Log out
+.fas.fa-power-off.fa-lg{
+  cursor: pointer;
+}
 
 
 

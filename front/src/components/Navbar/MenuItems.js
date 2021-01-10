@@ -20,10 +20,19 @@ export const MenuItems = [
   //   url: "contacto",
   //   cName: "nav-links"
   // },
-  {
-    title: "",
-    url: "inicio",
-    cName: "far fa-user fa-lg"
-    // cName: "nav-links-mobile"
-  }
+
+  // {
+  //   title: "",
+  //   url: "inicio",
+  //   cName: "far fa-user fa-lg"
+  //   // cName: "nav-links-mobile"
+  // },
+
+  // {
+  //   title: "Inicio Sesión",
+  //   url: "inicio",
+  //   cName: "nav-links-mobile"
+  // }
+
+
 ]
