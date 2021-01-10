@@ -1,10 +1,10 @@
 import React, { useState } from 'react'
 import { MenuItems } from "./MenuItems"
-import { Button } from "./Button.js"
 import "./Navbar.styles.scss"
 import { Link } from "react-router-dom"
 import { auth } from "../signInUp/firebase/firebase.utils"
 
+// import { Button } from "./Button.js"
 
 export const Navbar = ({ currentUser }) => {
   console.log("This is the current User?", currentUser)

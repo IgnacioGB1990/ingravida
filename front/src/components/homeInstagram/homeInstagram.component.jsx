@@ -14,7 +14,7 @@ const HomeInstagram = () => {
       <div className="ContainerImages">
         {instagramPictures.map((picture, index) => {
           return (
-            <img onClick={() =>
+            <img alt="instagramImages" onClick={() =>
               window.open(`https://www.instagram.com/${picture.instagram}`, "_blank")}
               key={index}
               className="InstaImages"

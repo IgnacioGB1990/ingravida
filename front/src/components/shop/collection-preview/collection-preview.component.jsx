@@ -7,7 +7,7 @@ const CollectionPreview = ({ name, imageUrl, price }) => (
 
 
   < div className="collection-preview" >
-    <img className="image-size" src={imageUrl} />
+    <img alt="products" className="image-size" src={imageUrl} />
     <div className="footer">
 
       <span className="title">{name}</span>

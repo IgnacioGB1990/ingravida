@@ -9,7 +9,7 @@ import TestPage from "./pages/test/test.component"
 import ShopPage from "./pages/shop/shop.component"
 import ContactPage from "./pages/contact/contact.component"
 import SignInAndSignUpPage from "./pages/sign-in-and-sign-up/sign-in-and-sign-up.component"
-import { auth } from "./components/signInUp/firebase/firebase.utils"
+import { auth, createUserProfileDocument } from "./components/signInUp/firebase/firebase.utils"
 
 
 class App extends React.Component {
@@ -25,8 +25,11 @@ class App extends React.Component {
 
 
   componentDidMount() {
-    this.unsubscribeFromAuth = auth.onAuthStateChanged(user => {
-      this.setState({ currentUser: user });
+    this.unsubscribeFromAuth = auth.onAuthStateChanged(async user => {
+      // this.setState({ currentUser: user });
+      createUserProfileDocument(user)
+
+
       console.log("This is the currentuser logged in", user)
     })
   }
