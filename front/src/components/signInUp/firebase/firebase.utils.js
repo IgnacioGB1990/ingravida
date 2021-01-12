@@ -2,6 +2,7 @@ import firebase from "firebase/app"
 import "firebase/firestore"
 import "firebase/auth"
 
+//Ingravida DB. Without Reading/Writing Permissions
 // const config = {
 //   apiKey: "AIzaSyBJtmH_n-w79Yrwfcpqv2kw8q7aMQEkP6Y",
 //   authDomain: "ingravida-db.firebaseapp.com",
@@ -12,8 +13,7 @@ import "firebase/auth"
 //   measurementId: "G-LRDXMXM20S"
 // }
 
-//Ingravida 2 DB
-
+//Ingravida 2 DB. Reading and Writing Peermission
 const config = {
   apiKey: "AIzaSyADL0fr6rDDdXEb6o7rrAQPEq7nkViYWVY",
   authDomain: "ingravida2-db.firebaseapp.com",

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import SignIn from "../../components/signInUp/sign-in/sign-in.component"
-// import SignUp from "../../components/sign-up/sign-up.component"
+import SignUp from "../../components/signInUp/sign-up/sign-up.component"
 
 import "./sign-in-and-sign-up.styles.scss"
 
@@ -9,7 +9,7 @@ const SignInAndSignUpPage = () => (
 
   <div className="sign-in-and-sign-up">
     <SignIn />
-    {/* /* <SignUp /> */}
+    <SignUp />
   </div>
 )
 
