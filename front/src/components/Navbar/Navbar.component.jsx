@@ -7,7 +7,7 @@ import { auth } from "../signInUp/firebase/firebase.utils"
 // import { Button } from "./Button.js"
 
 export const Navbar = ({ currentUser }) => {
-  console.log("This is the current User?", currentUser)
+
   const [Display, setDisplay] = useState(false)
 
   return (
