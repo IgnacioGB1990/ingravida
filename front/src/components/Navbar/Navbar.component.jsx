@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { MenuItems } from "./MenuItems"
 import "./Navbar.styles.scss"
 import { Link } from "react-router-dom"
+import { connect } from "react-redux" //connect=>HOC.Lets us modifiy component to have access to redux.
 import { auth } from "../signInUp/firebase/firebase.utils"
 
 // import { Button } from "./Button.js"
@@ -41,6 +42,10 @@ export const Navbar = ({ currentUser }) => {
 }
 
 
+const mapStateToProps = state => ({
 
+  currentUser: state.user.currentUser
 
-export default Navbar
+})
+
+export default connect(mapStateToProps)(Navbar)
