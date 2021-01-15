@@ -1,13 +1,15 @@
 import React, { useState } from 'react'
-import { MenuItems } from "./MenuItems"
-import "./Navbar.styles.scss"
 import { Link } from "react-router-dom"
 import { connect } from "react-redux" //connect=>HOC.Lets us modifiy component to have access to redux.
 import { auth } from "../signInUp/firebase/firebase.utils"
 
-// import { Button } from "./Button.js"
+import { MenuItems } from "./MenuItems"
+import CartIcon from "./cart-icon.component"
+import CartDropdown from "./cart-dropdown.component"
+import "./Navbar.styles.scss"
 
-export const Navbar = ({ currentUser }) => {
+
+export const Navbar = ({ currentUser, hidden }) => {
 
   const [Display, setDisplay] = useState(false)
 
@@ -36,16 +38,17 @@ export const Navbar = ({ currentUser }) => {
             <Link className="far fa-user fa-lg" to="/inicio"></Link>
         }
       </ul>
-      {/* <Button >Inicio</Button> */}
+      <CartIcon />
+      { hidden ? null : <CartDropdown />}
+
     </nav >
   )
 }
 
 
-const mapStateToProps = state => ({
-
-  currentUser: state.user.currentUser
-
+const mapStateToProps = ({ user: { currentUser }, cart: { hidden } }) => ({
+  currentUser,
+  hidden
 })
 
 export default connect(mapStateToProps)(Navbar)

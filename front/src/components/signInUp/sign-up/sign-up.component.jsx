@@ -57,15 +57,15 @@ class SingUp extends React.Component {
     const { displayName, email, password, confirmPassword } = this.state;
     return (
       <div className="sign-up">
-        <h2 className="title">I do not have an account</h2>
-        <span>Sing up with your email and password</span>
+        <h2 className="title">Crear una nueva cuenta</h2>
+        {/* <span>Crea cuenta con usuario y contraseña</span> */}
         <form className="sing-up-form" onSubmit={this.handleSubmit}>
           <FormInput
             type="text"
             name="displayName"
             value={displayName}
             onChange={this.handleChange}
-            label="Display Name"
+            label="Nombre"
             required
           />
           <FormInput
@@ -73,7 +73,7 @@ class SingUp extends React.Component {
             name="email"
             value={email}
             onChange={this.handleChange}
-            label="Email"
+            label="Correo"
             required
           />
           <FormInput
@@ -81,7 +81,7 @@ class SingUp extends React.Component {
             name="password"
             value={password}
             onChange={this.handleChange}
-            label="Password"
+            label="Contraseña"
             required
           />
           <FormInput
@@ -89,10 +89,10 @@ class SingUp extends React.Component {
             name="confirmPassword"
             value={confirmPassword}
             onChange={this.handleChange}
-            label="Confirm Password"
+            label="Confirma Contraseña"
             required
           />
-          <CustomButton type="submit">SIGN UP</CustomButton>
+          <CustomButton type="submit">Crear cuenta</CustomButton>
 
         </form>
       </div>
