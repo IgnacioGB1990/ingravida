@@ -1,11 +1,16 @@
 import React, { useState } from 'react'
 import { Link } from "react-router-dom"
 import { connect } from "react-redux" //connect=>HOC.Lets us modifiy component to have access to redux.
-import { auth } from "../signInUp/firebase/firebase.utils"
+import { createStructuredSelector } from "reselect"
 
+
+import { auth } from "../signInUp/firebase/firebase.utils"
 import { MenuItems } from "./MenuItems"
 import CartIcon from "./cart-icon.component"
 import CartDropdown from "./cart-dropdown.component"
+import { selectCartHidden } from "../../redux/cart/cart.selectors"
+import { selectCurrentUser } from "../../redux/user/user.selectors"
+
 import "./Navbar.styles.scss"
 
 
@@ -46,9 +51,9 @@ export const Navbar = ({ currentUser, hidden }) => {
 }
 
 
-const mapStateToProps = ({ user: { currentUser }, cart: { hidden } }) => ({
-  currentUser,
-  hidden
+const mapStateToProps = createStructuredSelector({
+  currentUser: selectCurrentUser,
+  hidden: selectCartHidden
 })
 
 export default connect(mapStateToProps)(Navbar)
