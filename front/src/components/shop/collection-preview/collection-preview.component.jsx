@@ -1,24 +1,31 @@
 import React from 'react'
+import { connect } from "react-redux"
+
+import CustomButton from "../custom-button/custom-button.component"
+import { addItem } from "../../../redux/cart/cart.actions"
 
 import "./collection-preview.styles.scss"
-import CustomButton from "../custom-button/custom-button.component"
 
-const CollectionPreview = ({ name, imageUrl, price }) => (
+const CollectionPreview = ({ item, addItem }) => {
 
+  const { name, price, imageUrl } = item;
 
-  < div className="collection-preview" >
-    <img alt="products" className="image-size" src={imageUrl} />
-    <div className="footer">
+  return (
+    <div className="collection-preview" >
+      <img alt="products" className="image-size" src={imageUrl} />
+      <div className="footer">
+        <span className="title">{name}</span>
+        <span className="price">{price}€</span>
+      </div>
+      <CustomButton onClick={() => addItem(item)}   >
+        Añadir a la cesta
+       </CustomButton >
+    </div >
+  )
+}
 
-      <span className="title">{name}</span>
-      <span className="price">{price}€</span>
+const mapDispatchToProps = dispatch => ({
+  addItem: item => dispatch(addItem(item))
+})
 
-    </div>
-    <CustomButton  >
-      Añadir a la cesta
-       </CustomButton>
-
-  </div >
-)
-
-export default CollectionPreview;
+export default connect(null, mapDispatchToProps)(CollectionPreview);

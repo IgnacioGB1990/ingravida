@@ -1,9 +1,9 @@
 import React from 'react';
 
-import "./shop.styles.css"
-
 import SHOP_DATA from "../../redux/shop/shop.data"
 import CollectionPreview from "../../components/shop/collection-preview/collection-preview.component"
+
+import "./shop.styles.css"
 
 class ShopPage extends React.Component {
 
@@ -35,13 +35,18 @@ class ShopPage extends React.Component {
         </div>
         <div className="white-bar2">
         </div>
-        <div className="products-collection">
 
-          {collections.map(({ id, ...otherCollectionProps }) => (
-            <CollectionPreview key={id} {...otherCollectionProps} />
+        <div className="products-collection">
+          {/* {collections.map(({ id, ...otherCollectionProps }) => (
+            <CollectionPreview key={id} {...otherCollectionProps} /> */}
+
+          {collections.map((item) => (
+            <CollectionPreview key={item.id} item={item} />
+            // console.log("item", { item })
             //console.log("this is the otherCollectionProps : ", { ...otherCollectionProps })
           ))}
         </div>
+
         <div className="white-bar2">
         </div>
       </div>
