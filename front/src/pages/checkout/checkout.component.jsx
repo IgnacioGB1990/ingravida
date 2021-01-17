@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from "react-redux"
 import { createStructuredSelector } from "reselect"
-import { createUserProfileDocument } from '../../components/signInUp/firebase/firebase.utils'
+// import { createUserProfileDocument } from '../../components/signInUp/firebase/firebase.utils'
 
 import CheckoutItem from "../../components/shop/checkout-item/checkout-item.component"
 
