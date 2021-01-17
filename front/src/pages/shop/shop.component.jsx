@@ -1,59 +1,42 @@
 import React from 'react';
+import { connect } from "react-redux"
+import { createStructuredSelector } from "reselect"
 
-import SHOP_DATA from "../../redux/shop/shop.data"
+
 import CollectionPreview from "../../components/shop/collection-preview/collection-preview.component"
+import { selectCollections } from "../../redux/shop/shop.selectors"
 
 import "./shop.styles.css"
 
-class ShopPage extends React.Component {
+const ShopPage = ({ collections }) => (
 
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      collections: SHOP_DATA
-    }
-  }
-
-  //Cogemos todo el array con la información
-  //y mapeamos sobre ella ...otherCollecionProps devuelve un Objeto con cada una de sus
-  //cualidades.
-  render() {
-    const { collections } = this.state;
-    console.log("This is the ARRAY of SHOP DATA", { collections })
-    return (
-      <div className="shop-page">
-        <div className="white-bar">
-        </div>
-        <div className="shop-header">
-          <div className="shop-all-title">
-            Catálogo de Productos
+  <div className="shop-page">
+    <div className="white-bar">
+    </div>
+    <div className="shop-header">
+      <div className="shop-all-title">
+        Catálogo de Productos
           </div>
-          <div className="shop-all-title-des">
-            champús, acondicionadores, geles y packs de ahorro
+      <div className="shop-all-title-des">
+        champús, acondicionadores, geles y packs de ahorro
           </div>
-        </div>
-        <div className="white-bar2">
-        </div>
+    </div>
+    <div className="white-bar2">
+    </div>
+    <div className="products-collection">
+      {collections.map((item) => (
+        <CollectionPreview key={item.id} item={item} />
+      ))}
+    </div>
+    <div className="white-bar2">
+    </div>
+  </div>
+);
 
-        <div className="products-collection">
-          {/* {collections.map(({ id, ...otherCollectionProps }) => (
-            <CollectionPreview key={id} {...otherCollectionProps} /> */}
-
-          {collections.map((item) => (
-            <CollectionPreview key={item.id} item={item} />
-            // console.log("item", { item })
-            //console.log("this is the otherCollectionProps : ", { ...otherCollectionProps })
-          ))}
-        </div>
-
-        <div className="white-bar2">
-        </div>
-      </div>
-    );
-  }
+const mapStateToProps = createStructuredSelector({
+  collections: selectCollections
+})
 
 
-}
 
-export default ShopPage;
+export default connect(mapStateToProps)(ShopPage);
