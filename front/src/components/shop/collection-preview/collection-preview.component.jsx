@@ -12,7 +12,7 @@ const CollectionPreview = ({ item, addItem }) => {
 
   return (
     <div className="collection-preview" >
-      <img alt="products" className="image-size" src={imageUrl} />
+      <img alt="products" className="image" src={imageUrl} />
       <div className="footer">
         <span className="title">{name}</span>
         <span className="price">{price}€</span>
