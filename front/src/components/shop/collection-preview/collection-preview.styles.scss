@@ -16,10 +16,12 @@
   background-size: cover;
   background-position: center;
   padding: 4% 0px;
+  cursor: pointer;
 }
 
 .image:hover{
   opacity:0.8;
+  
 }
 
 .footer {
@@ -34,17 +36,19 @@
   font-size: 18px;
   width: 80%;
   font-family: Canela Deck,serif;
+  padding-left: 1px;
   }
   
   .price{
     font-size: 16px;
     letter-spacing: .1em;
     width: 20%;
-  
+    padding-left: 25px;
+    padding-top:3px;
     color:#454545;
     font-family: linetocircularbold,sans-serif;
     justify-content: center;
-    background-color: bisque;
+    // background-color: bisque;
   }
 
  

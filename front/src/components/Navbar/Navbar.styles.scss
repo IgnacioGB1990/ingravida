@@ -10,10 +10,7 @@
   top: 0;
   width: 100%;
   border-bottom:1px solid #b5b5b5;
-  
   z-index:5;
-  
-  
 }
 
 .navbar-logo{
@@ -22,7 +19,6 @@
   margin-left:1px;
   cursor:pointer;
   text-decoration:none;
-  /* Added to be more to the left */
   transform: translate(-83%,-6%) 
 }
 
@@ -30,7 +26,6 @@
   color:black;
   cursor:pointer;
   text-decoration:none;
- 
 }
 
 .nav-menu{
@@ -41,7 +36,7 @@
   text-align:center;
   width:70vw;
   justify-content: end;
-  margin-right:2em;
+  // margin-right:2em;
 }
 
 .nav-links{
@@ -54,7 +49,6 @@
   background-color:#E9FFAA;
   border-radius:4px;
   transition: all 0.2s ease-out;
-  
 }
 
 .fa-bars{
@@ -134,9 +128,6 @@ display:none;
   }
 }
 
-
-
-
 //Log in 
 .far.fa-user.fa-lg{
   color:black;
@@ -147,19 +138,12 @@ display:none;
 background-color:#E9FFAA;
 border-radius:4px;
 transition: all 0.2s ease-out;
-
 }
 
 //Log out
 .fas.fa-power-off.fa-lg{
   cursor: pointer;
-  
 }
-
-
-
-
-
 
 /* Navbar appeareance for MOBILE */
 @media screen and (max-width:960px){
@@ -192,7 +176,6 @@ transition: all 0.2s ease-out;
     padding: 1rem;
     width:100%;
     display: table;
-
   }
 
   .nav-links:hover{
@@ -229,8 +212,6 @@ transition: all 0.2s ease-out;
     color:grey;
     font-size:1.4rem;
   }
-
-
 
   .nav-links-mobile{
     display: block;
