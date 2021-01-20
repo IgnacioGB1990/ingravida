@@ -12,6 +12,7 @@ import ShopPage from "./pages/shop/shop.component"
 import ContactPage from "./pages/contact/contact.component"
 import SignInAndSignUpPage from "./pages/sign-in-and-sign-up/sign-in-and-sign-up.component"
 import CheckoutPage from "./pages/checkout/checkout.component"
+import ProductDescriptionPage from "./pages/product-description/product-description.component"
 
 import { auth, createUserProfileDocument } from "./components/signInUp/firebase/firebase.utils"
 
@@ -53,6 +54,7 @@ class App extends React.Component {
             <Route exact path="/" component={HomePage} />
             <Route path="/tienda" component={ShopPage} />
             <Route exact path="/caja" component={CheckoutPage} />
+            <Route path="/producto" component={ProductDescriptionPage} />
             <Route path="/abc" component={ABCPage} />
             <Route path="/test" component={TestPage} />
             <Route path="/contacto" component={ContactPage} />
