@@ -3,6 +3,7 @@ import { connect } from "react-redux"
 import { useHistory } from "react-router-dom"
 
 import CustomButton from "../custom-button/custom-button.component"
+import ProductDescription from "../../product-description/product-description.component"
 import { addItem } from "../../../redux/cart/cart.actions"
 
 import "./collection-preview.styles.scss"
@@ -14,7 +15,7 @@ const CollectionPreview = ({ item, addItem }) => {
   //Lo que queremos es history.push `/producto/${name}` ???
   return (
     <div className="collection-preview" >
-      <img onClick={() => { history.push(`${name}`) }}
+      <img onClick={() => { history.push(`/producto/${name}`) }}
         alt="products"
         className="image"
         src={imageUrl} />
