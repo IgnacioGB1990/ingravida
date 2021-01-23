@@ -5,6 +5,9 @@ import "./product-description.styles.scss"
 const ProductDescription = ({ item }) => {
   console.log("entraaaaa", item)
 
+
+
+  //  A ELIMINAR!!!!!!!!!!!!!!?????????????'''
   return (
 
     <div className="cart-item">

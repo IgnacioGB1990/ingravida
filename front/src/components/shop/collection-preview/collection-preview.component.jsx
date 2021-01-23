@@ -12,10 +12,10 @@ const CollectionPreview = ({ item, addItem }) => {
 
   const history = useHistory()
   const { name, price, imageUrl } = item;
-  //Lo que queremos es history.push `/producto/${name}` ???
+
   return (
     <div className="collection-preview" >
-      <img onClick={() => { history.push(`/producto/${name}`) }}
+      <img onClick={() => { history.push(`/tienda/${name.toLowerCase()}`) }}
         alt="products"
         className="image"
         src={imageUrl} />

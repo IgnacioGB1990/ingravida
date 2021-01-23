@@ -38,13 +38,13 @@ const SHOP_DATA = [
   },
   {
     id: 7,
-    name: 'Champu',
+    name: 'Champus',
     imageUrl: 'https://res.cloudinary.com/djkhnzte2/image/upload/v1609849888/_IGB0525_d9auzz.jpg',
     price: 25
   },
   {
     id: 8,
-    name: 'Acondicionador',
+    name: 'Acondicionadores',
     imageUrl: 'https://res.cloudinary.com/djkhnzte2/image/upload/q_auto/v1609849889/_IGB0524_aztmjv.jpg',
     price: 18
   }
