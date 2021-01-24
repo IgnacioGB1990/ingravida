@@ -6,7 +6,7 @@ import ProductDescriptionPage from "../../pages/product-description/product-desc
 import "./shop.styles.css"
 
 const ShopPage = ({ match }) => {
-
+  console.log("esto es match.path", match.path)
   return (
 
     <div className="shop-page">

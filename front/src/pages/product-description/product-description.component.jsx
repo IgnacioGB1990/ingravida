@@ -7,12 +7,12 @@ import "./product-description.styles.scss"
 import ProductDescription from "../../components/product-description/product-description.component"
 
 const ProductDescriptionPage = ({ collection }) => {
-  // console.log("Returns whatever route you are after /tienda/", match.params.productId)
+
   console.log("This is my products", collection)
   return (
     <div className="product-container" >
       <h2>PRODUCT DESCRIPTION PAGE</h2>
-      {/* <ProductDescription /> */}
+      <ProductDescription collection={collection} />
     </div>
 
   );

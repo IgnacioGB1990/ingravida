@@ -2,22 +2,21 @@ import React from 'react'
 
 import "./product-description.styles.scss"
 
-const ProductDescription = ({ item }) => {
-  console.log("entraaaaa", item)
+const ProductDescription = ({ collection }) => {
+  console.log("Esto es collection??", collection)
 
+  const { name, imageUrl, price } = collection;
 
-
-  //  A ELIMINAR!!!!!!!!!!!!!!?????????????'''
   return (
 
     <div className="cart-item">
-      {/* <img src={imageUrl} alt="item" />
+      <img src={imageUrl} alt="item" />
       <div className="item-details">
         <span className="name">{name}</span>
         <span className="price">
-          {quantity}x{price}€
+          {price}€
         </span>
-      </div> */}
+      </div>
     </div>
   )
 }
