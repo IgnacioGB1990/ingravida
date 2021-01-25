@@ -10,9 +10,13 @@ import "./collection-preview.styles.scss"
 
 const CollectionPreview = ({ item, addItem }) => {
 
+
+
   const history = useHistory()
   const { name, price, imageUrl } = item;
-  // <img onClick={() => { history.match(`${name.toLowerCase()}`) }}
+
+
+
   return (
     <div className="collection-preview" >
       <img onClick={() => { history.push(`/tienda/${name.toLowerCase()}`) }}
