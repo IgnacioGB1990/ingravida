@@ -1,4 +1,5 @@
-.StripeCheckout{
-
-  background-color:green;
+button.stripe-button-el,
+button.stripe-button-el>span {
+  background-color: green !important;
+  // background-image: none;
 }

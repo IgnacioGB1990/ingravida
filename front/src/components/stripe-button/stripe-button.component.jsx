@@ -1,6 +1,8 @@
 import React from 'react'
 import StripeCheckout from "react-stripe-checkout"
 
+import "./stripe-button.styles.scss"
+
 const StripeCheckoutButton = ({ price }) => {
   // Stripe caveat: it wants price in cents. We multiply our values by 100:
 
@@ -16,7 +18,6 @@ const StripeCheckoutButton = ({ price }) => {
   return (
     //Check out https://github.com/azmenak/react-stripe-checkout for more configurable tabs.
     <StripeCheckout
-
       label="Paga ahora"
       name="Ingrávida"
       billingAddress=""
