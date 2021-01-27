@@ -1,5 +1,5 @@
 import React from 'react'
-import { YolsPortada } from "../../components/images/utils"
+import { YolsPortada } from "../images/utils"
 import { HomeIntroSection } from "../homeIntroSection/homeIntroSection.component"
 import "./homeIntro.styles.css"
 

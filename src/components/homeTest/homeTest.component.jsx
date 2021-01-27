@@ -1,6 +1,6 @@
 import React from 'react'
 import { Link } from "react-router-dom"
-import { FotoOndulada, FotoRizada, FotoExtraRizada } from "../../components/images/utils"
+import { FotoOndulada, FotoRizada, FotoExtraRizada } from "../images/utils"
 import "./homeTest.styles.css"
 import "./homeTest.styles.scss"
 
