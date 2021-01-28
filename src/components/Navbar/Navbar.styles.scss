@@ -19,7 +19,7 @@
   color:#000000;
   padding: 0.5rem 1rem;
   font-size:1.2rem;
-  position: fixed;
+  // position: fixed;
   margin: 10px 15px 15px 10px;
   left: 5%;
   display:inline;
@@ -166,9 +166,9 @@ transition: all 0.2s ease-out;
 
 /* Navbar appeareance for MOBILE */
 @media screen and (max-width:960px){
-  .NavbarItems{
-    position: relative;
-  }
+  // .NavbarItems{
+  //   position: relative;
+  // }
 
   .nav-menu{
     display:flex;
@@ -198,7 +198,12 @@ transition: all 0.2s ease-out;
   }
 
 .logo{
+  all: revert;
   left: 37vw;
+  text-align:center;
+  cursor:pointer;
+  text-decoration:none;
+  color:#000000;
 }
 
 
