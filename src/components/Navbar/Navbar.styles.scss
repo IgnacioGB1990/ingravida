@@ -166,10 +166,10 @@ transition: all 0.2s ease-out;
 
 /* Navbar appeareance for MOBILE */
 @media screen and (max-width:960px){
-  .NavbarItems{
-    position: relative;
-    top:0em !important;
-  }
+  // .NavbarItems{
+  //   position: relative;
+  //   top:0em !important;
+  // }
 
   .nav-menu{
     display:flex;
