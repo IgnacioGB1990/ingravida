@@ -20,7 +20,8 @@ export const Navbar = ({ currentUser, hidden }) => {
 
   return (
     <nav className="NavbarItems" >
-      <h1 className="navbar-logo"><a className="navbar-name " href="/">Ingrávida</a></h1>
+      {/* <h1 className="navbar-logo"><a className="navbar-name " href="/">Ingrávida</a></h1> */}
+      <Link className="logo" to="/">Ingrávida</Link>
 
       <div className="menu-icon" onClick={() => setDisplay(!Display)}>
         <i className={Display ? "fa fa-times" : "fas fa-bars"}></i>

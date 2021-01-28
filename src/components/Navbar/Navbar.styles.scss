@@ -13,13 +13,32 @@
   z-index:5;
 }
 
+.logo{
+  cursor:pointer;
+  text-decoration:none;
+  color:#000000;
+  padding: 0.5rem 1rem;
+  font-size:1.2rem;
+  position: fixed;
+  margin: 10px 15px 15px 10px;
+  left: 5%;
+  display:inline;
+}
+
+.logo:hover{
+  background-color:#E9FFAA;
+  border-radius:4px;
+  transition: all 0.2s ease-out;
+}
+
+
 .navbar-logo{
   color:#000000;
   justify-self: start;
   margin-left:1px;
   cursor:pointer;
   text-decoration:none;
-  transform: translate(-83%,-6%) 
+  // transform: translate(-83%,-6%) 
 }
 
 .navbar-name{
@@ -34,7 +53,7 @@
   grid-gap: 10px;
   list-style:none;
   text-align:center;
-  width:70vw;
+  width:80vw;
   justify-content: end;
   // margin-right:2em;
 }
@@ -178,6 +197,11 @@ transition: all 0.2s ease-out;
     display: table;
   }
 
+.logo{
+  left: 37vw;
+}
+
+
   .nav-links:hover{
     background-color:#E9FFAA;
     border-radius: 0;
@@ -187,14 +211,14 @@ transition: all 0.2s ease-out;
     position:absolute;
     top:0;
     left:0;
-    transform: translate(224%,50%)
+    // transform: translate(224%,50%)
   }
 
   .menu-icon{
     display:block;
     position:absolute;
-    top:0;
-    right:0;
+    top:50%;
+    right:50%;
     transform: translate(25%,50%)
   }
 
