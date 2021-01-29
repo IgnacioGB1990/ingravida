@@ -19,7 +19,6 @@
   color:#000000;
   padding: 0.5rem 1rem;
   font-size:1.2rem;
-  // position: fixed;
   margin: 10px 15px 15px 10px;
   left: 5%;
   display:inline;
@@ -115,7 +114,7 @@ transition: all 0.2s ease-out;
   }
 
 .logo{
-  // all: revert;
+  
   left: 37vw;
   text-align:center;
   cursor:pointer;
@@ -123,6 +122,12 @@ transition: all 0.2s ease-out;
   color:#000000;
 }
 
+.logo:hover{
+  // all: revert;
+  background-color:white;
+  border-radius:4px;
+  transition: all 0.2s ease-out;
+}
 
   .nav-links:hover{
     background-color:#E9FFAA;
@@ -133,9 +138,7 @@ transition: all 0.2s ease-out;
     display:block;
     position:absolute;
     top:2vh;
-    
     left:5vw;
-    // transform:translate(-2700%,50%);
     font-size: 1.2rem;
     cursor:pointer; 
   }

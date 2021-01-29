@@ -1,7 +1,7 @@
 import React from 'react'
 import { connect } from "react-redux"
 import { createStructuredSelector } from "reselect"
-import { withRouter } from "react-router-dom"
+import { withRouter, Link } from "react-router-dom"
 
 import CustomButton from "../shop/custom-button/custom-button.component"
 import CartItem from "../shop/cart-item/cart-item.component"
@@ -20,7 +20,8 @@ const CartDropdown = ({ cartItems, history, dispatch }) => (
             <CartItem key={cartItem.id} item={cartItem} />
           ))
         ) : (
-            <span className="empty-message">Tu cesta está vacia</span>
+            <span className="empty-message">Tu cesta está vacia ve a tienda</span>
+            // <Link className="empty-message" to="/tienda">Ve a tienda</Link>
           )}
 
     </div>
