@@ -47,7 +47,7 @@
   font-weight: bold;
   font-family: NB International,News Gothic MT,Helvetica,Arial,"sans-serif"; */
 
-height:50px;
+  height:50px;
   text-decoration: none;
   color:black;
   background-color:white;
@@ -78,7 +78,7 @@ height:50px;
     max-width:100%;
     top:0%;
     left:0%;
-    height:250px;
+    height:150px;
   }
 
   .Home-Intro-Section-Text{
@@ -112,29 +112,22 @@ height:50px;
   }
 
   .abcButton{
-  /* border:1px solid black;
-  margin-left:5%;
-  width:90%;
-  text-align: center; */
-
-
-
+  padding:1.5% 0px;
+  height:40px;
   font-size:1.1em;
   border: 1px solid black; 
   font-weight:550;
   margin-top:5%;
-  padding:3% 0px;
   margin-left:5%;
   width:90%;
   font-weight: bold;
   cursor: pointer;
   z-index: 1;
   }
-
   
 }
 
-
+  /* B I G   S C R E E N !!! */
  @media screen and (min-width:1400px){
 
   .Home-Intro-Section-Container{
