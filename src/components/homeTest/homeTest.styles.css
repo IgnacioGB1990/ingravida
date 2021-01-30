@@ -8,14 +8,12 @@
 }
 
 .Home-Test-Section{
-
   top:15%;
   left:5%;
   width:90%;
   height:75%;
   position: absolute;
   display:flex;
-  
 }
 /* LEFT */
 .Home-Test-Section-Left{
