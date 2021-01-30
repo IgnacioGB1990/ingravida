@@ -14,7 +14,7 @@ const HomeFooter = () => {
           className="youtube social"
           rel="noopener noreferrer"
         >
-          <FontAwesomeIcon icon={faYoutube} size="2x" />
+          <FontAwesomeIcon icon={faYoutube} className="social-media-icon" />
         </a>
 
         <a href="https://www.facebook.com "
@@ -22,7 +22,7 @@ const HomeFooter = () => {
           className="facebook social"
           rel="noopener noreferrer"
         >
-          <FontAwesomeIcon icon={faFacebook} size="2x" />
+          <FontAwesomeIcon icon={faFacebook} className="social-media-icon" />
         </a>
 
         <a href="https://www.twitter.com "
@@ -30,7 +30,7 @@ const HomeFooter = () => {
           className="twitter social"
           rel="noopener noreferrer"
         >
-          <FontAwesomeIcon icon={faTwitter} size="2x" />
+          <FontAwesomeIcon icon={faTwitter} className="social-media-icon" />
         </a>
 
         <a href="https://www.instagram.com "
@@ -38,7 +38,7 @@ const HomeFooter = () => {
           className="instagram social"
           rel="noopener noreferrer"
         >
-          <FontAwesomeIcon icon={faInstagram} size="2x" />
+          <FontAwesomeIcon icon={faInstagram} className="social-media-icon" />
         </a>
       </div>
 

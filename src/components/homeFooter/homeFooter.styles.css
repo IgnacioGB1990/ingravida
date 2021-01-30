@@ -1,13 +1,19 @@
 .ContainerFooter{
 height:120px;
+
 }
 
 .social-container{
   margin:auto;
-  padding:50px 50px;
+  padding:50px 30px;
   width:30%;
   height:100%;
   text-align:center;
+  
+}
+
+.social-media-icon{
+  font-size:30px;
 }
 
 a.social{
@@ -45,9 +51,17 @@ a.instagram{
 
   .social-container{
     width:100%;
-    padding:35px 50px;
+    padding:35px 20px;
   }
   
+  .social-media-icon{
+    font-size:5vw;
+  }
+
+  a.social{
+    margin: 0 0.5rem;
+   
+  }
 
 
 }

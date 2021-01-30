@@ -87,10 +87,7 @@ transition: all 0.2s ease-out;
 @media screen and (max-width:960px){
 
 
-
 .menu-icon{
-  
-  
   display:block;
   position:absolute;
   top:2vh;
@@ -107,8 +104,6 @@ transition: all 0.2s ease-out;
   text-decoration:none;
   color:#000000;
 }
-
-
  
   .nav-menu{
     display:flex;
@@ -119,14 +114,14 @@ transition: all 0.2s ease-out;
     top:50px;
     left:-100%;
     opacity:1;
-    transition: all 0.5s ease;
+    transition: all 0.35s ease;
   }
 
   .nav-menu.active{
     background: white;
     left: 0;
     opacity:1;
-    transition: all 0.5s ease;
+    transition: all 0.35s ease;
     z-index:1;
   }
 
