@@ -114,14 +114,14 @@ transition: all 0.2s ease-out;
     top:50px;
     left:-100%;
     opacity:1;
-    transition: all 0.35s ease;
+    transition: all 0.3s ease;
   }
 
   .nav-menu.active{
     background: white;
     left: 0;
     opacity:1;
-    transition: all 0.35s ease;
+    transition: all 0.3s ease;
     z-index:1;
   }
 
