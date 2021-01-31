@@ -90,8 +90,10 @@ transition: all 0.2s ease-out;
 .menu-icon{
   display:block;
   position:absolute;
-  top:2vh;
-  left:3%;
+  // top:2vh;
+  // left:3%;
+  top: 20%;
+  left: 3%;
   font-size: 1.2rem;
   cursor:pointer; 
 }

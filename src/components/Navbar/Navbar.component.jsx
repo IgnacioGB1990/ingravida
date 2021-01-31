@@ -15,6 +15,7 @@ import "./Navbar.styles.scss"
 export const Navbar = ({ currentUser, hidden }) => {
 
   const [Display, setDisplay] = useState(false)
+  console.log("This is the display mama", Display)
 
   return (
     <nav className="NavbarItems" >
@@ -27,8 +28,10 @@ export const Navbar = ({ currentUser, hidden }) => {
         {MenuItems.map((item, index) => {
           return (
             <li key={index}>
-
-              <Link className={item.cName} to={item.url}>
+              <Link
+                onClick={() => { setDisplay(!Display) }}
+                className={item.cName}
+                to={item.url}>
                 {item.title}
               </Link>
             </li>
@@ -43,7 +46,6 @@ export const Navbar = ({ currentUser, hidden }) => {
       </ul>
       <CartIcon />
       { hidden ? null : <CartDropdown />}
-
     </nav >
   )
 }
