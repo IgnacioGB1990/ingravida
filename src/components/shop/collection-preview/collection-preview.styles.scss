@@ -7,7 +7,6 @@
   justify-content: space-between;
   flex-wrap: wrap;
   margin-bottom:3%;
-  // background-color: aqua;
 }
 
 .image{
@@ -21,7 +20,6 @@
 
 .image:hover{
   opacity:0.8;
-  
 }
 
 .footer {
@@ -29,7 +27,6 @@
   height: 5%;
   display: flex;
   font-size: 18px;
-  // background-color: green; 
  }
 
   .title {
@@ -48,7 +45,46 @@
     color:#454545;
     font-family: linetocircularbold,sans-serif;
     justify-content: center;
-    // background-color: bisque;
   }
 
+  @media screen and (max-width:960px){
+    .collection-preview {
+      flex-flow: column wrap;
+      width: 200px;
+      height: 340px;
+      justify-content: space-between;
+      margin-bottom:0%;
+    }
+
+    .image{
+      width: 100%;
+      height: 70%;
+      background-size: cover;
+      background-position: center;
+      padding: 4% 0px;
+      cursor: pointer;
+    }
+
+
+    .footer {
+      all:revert;
+      width: 200px;
+      font-size: 18px;
+      text-align: center;
+     }
+
+     .price{
+      
+      padding-left: 5px;
+     
+    }
+
+     #mobile-add-item{
+      width:200px;
+      height:45px;
+      font-size:12px;
+      margin-bottom:35px;
+     }
  
+
+  }

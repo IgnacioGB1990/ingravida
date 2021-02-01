@@ -28,7 +28,7 @@ const CollectionPreview = ({ item, addItem }) => {
         <span className="title">{name}</span>
         <span className="price">{price}€</span>
       </div>
-      <CustomButton onClick={() => addItem(item)}   >
+      <CustomButton id="mobile-add-item" onClick={() => addItem(item)}   >
         Añadir a la cesta
        </CustomButton >
     </div >

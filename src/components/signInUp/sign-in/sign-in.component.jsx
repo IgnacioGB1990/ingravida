@@ -3,6 +3,9 @@ import React from 'react';
 import FormInput from "../form-input/form-input.component"
 import CustomButton from "../../shop/custom-button/custom-button.component"
 
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faGoogle } from "@fortawesome/free-brands-svg-icons";
+
 import { auth, signInWithGoogle } from "../firebase/firebase.utils"
 
 import "./sign-in.styles.scss"
@@ -66,10 +69,15 @@ class SignIn extends React.Component {
 
 
           <CustomButton type="submit" >Iniciar sesión</CustomButton>
-          <CustomButton type="button" onClick={signInWithGoogle}>
+          <div className="google-button" onClick={signInWithGoogle}>Inicio con Google{" "}
+            <FontAwesomeIcon icon={faGoogle} className="google-style" />
+          </div>
+
+
+          {/* <form className="google-button" type="button" onClick={signInWithGoogle}>
             {" "}
             Inicio con Google {" "}
-          </CustomButton>
+          </form> */}
         </form>
       </div >
     )
