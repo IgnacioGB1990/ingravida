@@ -1,10 +1,23 @@
 .sign-in-and-sign-up{
   top:250px;
-  // background-color: red;
   width:850px;
-   height:300px;
+  height:100%;
   display:flex;
   justify-content:space-between;
   margin:80px auto;
   
+}
+
+@media screen and (max-width:960px){
+  .sign-in-and-sign-up{
+    display:flex;
+    justify-content:column;
+    flex-flow: column wrap;
+    height:100%;
+    width:100%;
+
+  }
+
+ 
+
 }

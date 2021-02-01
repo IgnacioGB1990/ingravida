@@ -16,6 +16,7 @@ export const Navbar = ({ currentUser, hidden }) => {
 
   const [Display, setDisplay] = useState(false)
   console.log("This is the display mama", Display)
+  console.log("This is the currentUser", currentUser)
 
   return (
     <nav className="NavbarItems" >
@@ -41,7 +42,10 @@ export const Navbar = ({ currentUser, hidden }) => {
           currentUser ?
             <div className="fas fa-power-off fa-lg" onClick={() => auth.signOut()}></div>
             :
-            <Link className="far fa-user fa-lg" to="/inicio"></Link>
+            !Display ?
+              <Link className="far fa-user fa-lg" to="/inicio" ></Link>
+              :
+              <Link className="log-in-mobile" to="/inicio" onClick={() => setDisplay(!Display)} >Inicio Sesión</Link>
         }
       </ul>
       <CartIcon />
