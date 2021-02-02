@@ -67,6 +67,7 @@ class SingUp extends React.Component {
             onChange={this.handleChange}
             label="Nombre"
             required
+            id="displayName-styles"
           />
           <FormInput
             type="email"
@@ -75,6 +76,7 @@ class SingUp extends React.Component {
             onChange={this.handleChange}
             label="Correo"
             required
+            id="email-styles"
           />
           <FormInput
             type="password"
@@ -83,6 +85,7 @@ class SingUp extends React.Component {
             onChange={this.handleChange}
             label="Contraseña"
             required
+            id="password-styles"
           />
           <FormInput
             type="password"
@@ -91,8 +94,9 @@ class SingUp extends React.Component {
             onChange={this.handleChange}
             label="Confirma Contraseña"
             required
+            id="confirmPassword-styles"
           />
-          <CustomButton type="submit">Crear cuenta</CustomButton>
+          <CustomButton id="sign-up-button" type="submit">Crear cuenta</CustomButton>
 
         </form>
       </div>
