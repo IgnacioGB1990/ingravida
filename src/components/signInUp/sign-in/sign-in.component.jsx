@@ -55,7 +55,9 @@ class SignIn extends React.Component {
             handleChange={this.handleChange}
             value={this.state.email}
             label="Correo"
-            required />
+            required
+            id="email-styles"
+          />
 
 
           <FormInput
@@ -65,10 +67,11 @@ class SignIn extends React.Component {
             handleChange={this.handleChange}
             label="Contraseña"
             required
+            id="password-styles"
           />
 
 
-          <CustomButton type="submit" >Iniciar sesión</CustomButton>
+          <CustomButton id="log-in-button" type="submit" >Iniciar sesión</CustomButton>
           <div className="google-button" onClick={signInWithGoogle}>Inicio con Google{" "}
             <FontAwesomeIcon icon={faGoogle} className="google-style" />
           </div>
