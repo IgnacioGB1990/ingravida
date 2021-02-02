@@ -86,12 +86,9 @@ transition: all 0.2s ease-out;
 /* Navbar appeareance for MOBILE */
 @media screen and (max-width:960px){
 
-
 .menu-icon{
   display:block;
   position:absolute;
-  // top:2vh;
-  // left:3%;
   top: 20%;
   left: 3%;
   font-size: 1.2rem;
@@ -100,7 +97,6 @@ transition: all 0.2s ease-out;
 
 .logo{
   margin: 3px 5px 5px 3px;
-  // left: 37vw;
    text-align:center;
   cursor:pointer;
   text-decoration:none;
@@ -148,15 +144,12 @@ transition: all 0.2s ease-out;
     border-radius: 0;
   }
 
-
-
   .fa-times{
     color:grey;
     font-size:1.4rem;
   }
 
   .nav-links-mobile{
-    
     display: block;
     text-align: center;
     padding:0.5rem;
@@ -178,8 +171,6 @@ transition: all 0.2s ease-out;
   Button{
     display:none;
   }
-
-
 
   .log-in-mobile{
     display: block;
