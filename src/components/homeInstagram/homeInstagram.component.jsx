@@ -9,7 +9,7 @@ const HomeInstagram = () => {
 
   return (
     <div className="ContainerInstagram">
-      <h2 className="HeaderInstagram">Comparte tu viaje de rizos en #ingravida</h2>
+      <h2 className="HeaderInstagram">únete a nuestra comunidad en #ingravida</h2>
 
       <div className="ContainerImages">
         {instagramPictures.map((picture, index) => {
