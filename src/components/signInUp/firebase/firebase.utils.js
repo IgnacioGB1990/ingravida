@@ -51,10 +51,40 @@ export const createUserProfileDocument = async (userAuth, additionalData) => {
   }
 
   return userRef;
-  // console.log(snapShot)
-  //console.log(firestore.doc("users/1234234"))
 }
 
+export const addCollectionAndDocuments = async (collectionKey, objectsToAdd) => {
+  const collectionRef = firestore.collection(collectionKey)
+  const batch = firestore.batch()
+
+  //Automatically generates key on Firebase
+  objectsToAdd.forEach(obj => {
+    const newDocRef = collectionRef.doc();
+    batch.set(newDocRef, obj)
+  })
+  return await batch.commit()
+}
+
+//Get whole snapshot where our product data is. We convert it into Object instead of Array
+export const convertCollectionsSnapshotToMap = (collections) => {
+  const transformedCollection = collections.docs.map(doc => {
+    const { name, imageUrl, price } = doc.data()
+
+
+    return {
+      routeName: encodeURI(name.toLowerCase()),
+      id: doc.id,
+      name,
+      imageUrl,
+      price
+    }
+  })
+
+  return transformedCollection.reduce((accumulator, collection) => {
+    accumulator[collection.name.toLowerCase()] = collection;
+    return accumulator;
+  }, {})
+}
 
 
 firebase.initializeApp(config)

@@ -1,7 +1,6 @@
 import React from 'react'
 import { connect } from "react-redux"
 import { useHistory } from "react-router-dom"
-import LazyLoad from 'react-lazy-load';
 
 import CustomButton from "../custom-button/custom-button.component"
 import { addItem } from "../../../redux/cart/cart.actions"
@@ -13,18 +12,15 @@ const CollectionPreview = ({ item, addItem }) => {
   const history = useHistory()
   const { name, price, imageUrl } = item;
 
+  console.log("this is item", item)
   return (
     <div className="collection-preview" >
-      <LazyLoad
 
-        debounce={false}
-        offsetVertical={500}
-      >
-        <img onClick={() => { history.push(`/tienda/${name.toLowerCase()}`) }}
-          alt="products"
-          className="image"
-          src={imageUrl} />
-      </LazyLoad>
+      <img onClick={() => { history.push(`/tienda/${name.toLowerCase()}`) }}
+        alt="products"
+        className="image"
+        src={imageUrl} />
+
       <div className="footer">
         <span className="title">{name}</span>
         <span className="price">{price}€</span>

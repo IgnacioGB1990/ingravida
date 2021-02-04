@@ -13,13 +13,14 @@ export const selectProduct = memoize((productUrlParam) =>
   createSelector(
     [selectCollections],
     (collections) =>
-      collections[productUrlParam]
+      collections ? collections[productUrlParam] : null
   )
 )
 
 export const selectCollectionsForPreview = createSelector(
   [selectCollections],
-  collections => Object.keys(collections).map(key => collections[key])
+  collections =>
+    collections ? Object.keys(collections).map(key => collections[key]) : []
 )
 
 
