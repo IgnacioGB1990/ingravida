@@ -1,4 +1,4 @@
-.Home-Intro-Section-Container{
+.home-intro-section-container{
   position: absolute;
   text-align:center;
   max-width:80%;
@@ -10,14 +10,14 @@
   text-align: center;
 } 
 
-.Home-Intro-Section-Text{
+.home-intro-section-text{
   font-size: 60px;
   font-family: Canela Deck,serif;
-  color:#cf3;
+  color:black;
   font-weight: 900;
 }
 
-.Home-Intro-Section-Logo{
+.home-intro-section-logo{
   padding-top:30px;
   color:white;
   font-size: 19px;
@@ -36,17 +36,6 @@
 }
 
 .abcButton{
-  /* position:relative;
-  top:30%;
-  width:70%;
-  text-decoration: none;
-  color:black;
-  background-color:white;
-  padding: 10px 24px;
-  border: 1px solid black;
-  font-weight: bold;
-  font-family: NB International,News Gothic MT,Helvetica,Arial,"sans-serif"; */
-
   height:50px;
   text-decoration: none;
   color:black;
@@ -67,13 +56,13 @@
 
 .abcButton:hover{
   color:black;
-  background-color: #E9FFAA;
+  background-color: #62D7D5;
 }
 
 /* Mobile */
 @media screen and (max-width:1000px){
 
-  .Home-Intro-Section-Container{
+  .home-intro-section-container{
     position:relative;
     max-width:100%;
     top:0%;
@@ -82,12 +71,12 @@
     max-height:100%;
   }
 
-  .Home-Intro-Section-Text{
+  .home-intro-section-text{
     font-size: 30px;
     color:black;
   }
 
-  .Home-Intro-Section-Logo{
+  .home-intro-section-logo{
     padding-top:10px;
     color:black;
     font-size: 16px;
@@ -131,7 +120,7 @@
   /* B I G   S C R E E N !!! */
  @media screen and (min-width:1400px){
 
-  .Home-Intro-Section-Container{
+  .home-intro-section-container{
     position: absolute;
     text-align:center;
      top:20%;

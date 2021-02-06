@@ -1,12 +1,30 @@
+:root {
+  /* Palette */
+  --one-color: #58F3F3;
+  --two-color: #4DD5D5;
+  --three-color: #42B6B6;
+  --four-dark-color: #379898;
+  --five-color: #2C7979;
+  --red-color: #215B5B;
+  --yellow-color: #163D3D;
+ 
+
+}
+
+
+
+
+
+
 .Home-Intro-Container {
-  height:300px;
+  height:400px;
   width:100%;
   background-color: #fff;
   /* z-index: 1; */
-  /* position: relative; */
+  position: relative;
   
   top:100px;
-  background-color:blue;
+  background-color:#62BCD7;
 }
 
 .Home-Intro-Image {
@@ -28,7 +46,7 @@
   }
 
   .white-bar-intro{
-    height: 80px;
+    height: 100px;
       box-shadow: 1px 1px #d9d9d9;
   }
 
@@ -39,8 +57,13 @@
  @media screen and (min-width:1400px){
 
   .Home-Intro-Container {
-
+    height:400px;
+    width:100%;
+    background-color: #fff;
+    /* z-index: 1; */
+    position: relative;
     
-    
+    top:200px;
+    background-color:#62BCD7;
   }
 } 
