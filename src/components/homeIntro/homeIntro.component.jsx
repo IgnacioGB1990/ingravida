@@ -8,9 +8,9 @@ const HomeIntro = () => {
     <div className="Home-Intro-Container">
       <div className="white-bar-intro">
       </div>
-      <img className="Home-Intro-Image"
+      {/* <img className="Home-Intro-Image"
         src={YolsPortada}
-        alt="Home Page" />
+        alt="Home Page" /> */}
 
       <  HomeIntroSection />
     </div>

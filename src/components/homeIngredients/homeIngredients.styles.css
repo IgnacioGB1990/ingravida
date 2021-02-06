@@ -75,7 +75,7 @@ height:15%
   background-color: #E9FFAA;
 }
 
-@media screen and (max-width:960px){
+@media screen and (max-width:1000px){
   
   .Container{
     height:550px;

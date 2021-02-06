@@ -71,7 +71,7 @@
 }
 
 /* Mobile */
-@media screen and (max-width:960px){
+@media screen and (max-width:1000px){
 
   .Home-Intro-Section-Container{
     position:relative;
