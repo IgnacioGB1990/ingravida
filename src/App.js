@@ -52,23 +52,23 @@ class App extends React.Component {
       <Router>
         <div className="App">
           <Navbar />
-          {/* <Switch> */}
-          <Route exact path="/" component={HomePage} />
-          <Route path="/tienda" component={ShopPage} />
-          <Route exact path="/caja" component={CheckoutPage} />
-          <Route path="/producto" component={ProductDescriptionPage} />
-          <Route path="/abc" component={ABCPage} />
-          <Route path="/test" component={TestPage} />
-          <Route path="/contacto" component={ContactPage} />
-          <Route exact path="/inicio"
-            render={() =>
-              this.props.currentUser ? (
-                <Redirect to="/" />
-              ) : (
-                  <SignInAndSignUpPage />
-                )}
-          />
-          {/* </Switch> */}
+          <Switch>
+            <Route exact path="/" component={HomePage} />
+            <Route path="/tienda" component={ShopPage} />
+            <Route exact path="/caja" component={CheckoutPage} />
+            <Route path="/producto" component={ProductDescriptionPage} />
+            <Route path="/abc" component={ABCPage} />
+            <Route path="/test" component={TestPage} />
+            <Route path="/contacto" component={ContactPage} />
+            <Route exact path="/inicio"
+              render={() =>
+                this.props.currentUser ? (
+                  <Redirect to="/" />
+                ) : (
+                    <SignInAndSignUpPage />
+                  )}
+            />
+          </Switch>
         </div>
       </Router>
     );
