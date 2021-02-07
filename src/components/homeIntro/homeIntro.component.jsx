@@ -1,16 +1,16 @@
 import React from 'react'
-import { YolsPortada } from "../images/utils"
+import { YolsPortada2 } from "../images/utils"
 import { HomeIntroSection } from "../homeIntroSection/homeIntroSection.component"
 import "./homeIntro.styles.css"
 
 const HomeIntro = () => {
   return (
-    <div className="Home-Intro-Container">
-      <div className="white-bar-intro">
-      </div>
-      {/* <img className="Home-Intro-Image"
-        src={YolsPortada}
-        alt="Home Page" /> */}
+    <div className="home-intro-container">
+
+
+      <img className="Home-Intro-Image"
+        src={YolsPortada2}
+        alt="Home Page" />
 
       <  HomeIntroSection />
     </div>
