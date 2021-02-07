@@ -19,7 +19,7 @@ export const Navbar = ({ hidden }) => {
 
   return (
     <nav className="NavbarItems" >
-      <Link className="logo" to="/">I N G R Á V I D A</Link>
+      <Link className="logo" to="/">INGRÁVIDA</Link>
 
       <div className="search-user-cart-icons">
         <UserLogo />

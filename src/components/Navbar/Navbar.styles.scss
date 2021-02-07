@@ -22,11 +22,12 @@
   margin:auto;
   cursor:pointer;
   text-decoration:none;
-  color:#000000;
+  color:black;
   font-size:1.6rem;
   text-align: center;
   display:inline;
   font-family: Montserrat;
+  letter-spacing: 5px;
 }
 
 .search-user-cart-icons{
@@ -43,7 +44,7 @@
 
 .nav-menu{
   order:2;
-  height:40px;
+  height:30px;
   display: flex;
   grid-template-columns: repeat(5,auto);
   grid-gap: 10px;
@@ -57,6 +58,7 @@
 
 .nav-boxes{
   margin:auto;
+  
 }
 
 .nav-links{
@@ -64,7 +66,7 @@
   text-decoration:none;
   text-align: center;
   padding: 0rem 1rem;
-  margin-top:1rem;
+ 
   letter-spacing: 3px;
   text-transform: uppercase;
   font-family: Montserrat;
@@ -97,11 +99,7 @@ display:none;
   }
   
   .logo{
-    // margin: 3px 5px 5px 3px;
-    //  text-align:center;
-    // cursor:pointer;
-    // text-decoration:none;
-    // color:#000000;
+  letter-spacing: 1px;
     font-size:1rem;
   }
 
@@ -128,10 +126,17 @@ display:none;
 
   .nav-menu.active{
     background: white;
+    position:absolute;
     left: 0;
     opacity:1;
     transition: all 0.3s ease;
-    z-index:1;
+    top:50px;
+    height:340px;
+    
+  }
+
+  .nav-boxes{
+    height: 30px;
   }
 
   .nav-links{
@@ -139,10 +144,11 @@ display:none;
     padding: 1rem;
     width:100%;
     display: table;
+    height: 10px;
   }
 
   .nav-links:hover{
-    background-color:#E9FFAA;
+    background-color:#62BCD7;
     border-radius: 0;
   }
 
