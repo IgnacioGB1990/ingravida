@@ -11,7 +11,7 @@
   font-weight:bold;
   top: 0;
   border-bottom:1px solid #b5b5b5;
-  // z-index:5;
+  z-index:5;
 }
 
 .logo{
@@ -46,12 +46,13 @@
   order:2;
   height:30px;
   display: flex;
-  grid-template-columns: repeat(5,auto);
-  grid-gap: 10px;
   list-style:none;
-  text-align:center;
-  width:80vw;
-  justify-content: center;
+  background-color: #62BCD7;
+  // grid-template-columns: repeat(5,auto);
+  // grid-gap: 10px;
+  // text-align:center;
+  width:80%;
+  // justify-content: center;
   // background-color: #E9FFAA;
   margin:auto;
 }
@@ -65,9 +66,9 @@
   color:black;
   text-decoration:none;
   text-align: center;
-  padding: 0rem 1rem;
+  // padding: 0rem 1rem;
  
-  letter-spacing: 3px;
+  letter-spacing: 2px;
   text-transform: uppercase;
   font-family: Montserrat;
   // background-color: pink;
@@ -194,7 +195,9 @@ display:none;
 
   .nav-menu{
     
-    width:60vw;
+    width:80vw;
+    display:flex;
+    justify-content: center;
     
   }
 
