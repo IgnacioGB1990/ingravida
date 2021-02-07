@@ -123,6 +123,7 @@ display:none;
     left:-100%;
     opacity:1;
     transition: all 0.3s ease;
+    
   }
 
   .nav-menu.active{
@@ -132,12 +133,14 @@ display:none;
     opacity:1;
     transition: all 0.3s ease;
     top:50px;
-    height:100vh;
-    
+    height:100vh; 
   }
 
   .nav-boxes{
-    height: 30px;
+    top:1px;
+    height: 42px;
+    width:100%;
+    border-bottom:1px solid #b5b5b5;  
   }
 
   .nav-links{
@@ -146,6 +149,7 @@ display:none;
     width:100%;
     display: table;
     height: 10px;
+    
   }
 
   .nav-links:hover{
