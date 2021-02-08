@@ -12,7 +12,7 @@ function HomePage() {
 
       <HomeIntro />
       <HomeTest />
-      <HomeIngredients />
+      {/* <HomeIngredients /> */}
       <HomeInstagram />
       <HomeFooter />
 

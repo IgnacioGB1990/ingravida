@@ -3,6 +3,7 @@ width: 100%;
 height:600px;
 top:50px;
 position:relative;
+background-color: #f7f7f7;
 }
 
 .Section{
@@ -13,7 +14,7 @@ position:relative;
   position: absolute;
   display:flex;
   flex-direction: column;
-  background-color: #f7f7f7;
+ 
 }
 
 .Header{
@@ -78,18 +79,18 @@ height:15%
 @media screen and (max-width:1000px){
   
   .Container{
-    height:550px;
+    height:650px;
     width:100%;
     position: relative;
     top:1px;
-    border:1px solid yellow;
+    
     }
 
     .Section{
       top:10%;
       left:0%;
       width:100%;
-      height:100%;
+      height:80%;
     }
 
     .Header{
@@ -99,12 +100,13 @@ height:15%
 
       .IngredientsBox{
         width:100%;
-        height:100%;
+        height:80%;
       }
 
       .IngredientsDisplay{
         flex-direction: column; 
         justify-content: flex-start;
+        height:80%;
       }
 
       .Elements{
