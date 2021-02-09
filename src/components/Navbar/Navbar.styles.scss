@@ -1,17 +1,20 @@
 .NavbarItems{
-  width: 100%;
-  height: 100px;
   position: fixed;
+  top: 0;
+  right:0;
+  left:0;
+  z-index:9999;
   display:flex;
   flex-direction: column;
+  width: 100%;
+  height: 100px;
   background:#fff;
   justify-content: center;
   align-items: column;
   font-size:0.7rem;
   font-weight:bold;
-  top: 0;
-  border-bottom:1px solid #b5b5b5;
-  z-index:5;
+  user-select: none;
+ 
 }
 
 .logo{
@@ -135,7 +138,7 @@ display:none;
     text-align: center;
     vertical-align: middle;
     line-height: 50px;
-    border:1px solid black;
+    
    
   }
 
@@ -228,102 +231,3 @@ display:none;
 
 
 
-
-// .examples {
-//   display: flex;
-//   flex-flow: column;
-//   max-width: 100%;
-//   width: 960px;
-//   background-color: white;
-//   opacity: 0.95;
-//   padding: 15px 30px;
-//   margin: 0 auto 30px;
-  
-  
-//   .example {
-//     display: flex;
-//     flex-flow: row nowrap;
-//     align-items: center;
-//     margin: 0 0 45px;
-//     .hover {
-//       font-size: 36px;
-//       text-align: center;
-//       margin: 0 auto;
-//       padding: 0;
-//       transition: all 0.2s ease-in-out;
-//       position: relative;
-//       &:before,
-//       &:after {
-//         content: "";
-//         position: absolute;
-//         bottom: -10px;
-//         width: 0px;
-//         height: 5px;
-//         margin: 5px 0 0;
-//         transition: all 0.2s ease-in-out;
-//         transition-duration: 0.75s;
-//         opacity: 0;
-//         background-color: darken(orange,5%);
-//       }
-//       &.hover-3 {
-//         &:before {
-//           left: 50%;
-//         }
-//         &:after {
-//           right: 50%;
-//         }
-//       }
-      
-//     }
-//     &:hover {
-//       cursor: pointer;
-//       .hover {
-//         &:before,
-//         &:after {
-//           width: 100%;
-//           opacity: 1;
-//         }
-//         &.hover-3{
-//           &:before,
-//           &:after {
-//             width: 50%;
-//           }
-//         }
-//       }
-//     }
-//   }
-// }
-
-
-
-
-
-// {/* <h1 className="navbar-logo"><a className="navbar-name " href="/">Ingrávida</a></h1> */}
-
-
-// .navbar-logo{
-//   color:#000000;
-//   justify-self: start;
-//   margin-left:1px;
-//   cursor:pointer;
-//   text-decoration:none;
-//    transform: translate(-83%,-6%) 
-// }
-
-
-// .navbar-name{
-//   color:black;
-//   cursor:pointer;
-//   text-decoration:none;
-// }
-
-
-
-//mobile
-
-// .navbar-logo{
-//   position:absolute;
-//   top:0;
-//   left:0;
-//   // transform: translate(224%,50%)
-// }

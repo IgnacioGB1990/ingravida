@@ -7,8 +7,25 @@ import "./threeImage.styles.scss"
 const ThreeImage = () => {
   return (
     <div className="three-image-container">
-      HELLO
-    </div>
+      <div className="three-wash">
+        <img className="home-intro-image"
+          src={FotoOndulada}
+          alt="Home Page" />
+
+<div className="collec-title">colleción lavado</div>
+      </div>
+      <div className="three-style"> <img className="home-intro-image"
+        src={FotoRizada}
+        alt="Home Page" />
+        <div className="collec-title">colleción estilo</div>
+
+      </div>
+      <div className="three-accesories"> <img className="home-intro-image"
+        src={FotoExtraRizada}
+        alt="Home Page" />
+        <div className="collec-title">colleción accesorios</div>
+      </div>
+    </div >
   )
 }
 

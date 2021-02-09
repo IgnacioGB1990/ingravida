@@ -71,10 +71,6 @@
   background-color: #62D7D5;
 }
 
-
-
-
-
  /* MOBILE */
  /* Activates when resolution is smaller than 960px */
 @media screen and (max-width:1000px){
@@ -82,22 +78,13 @@
   .home-intro-container {
     top:0px;
     height:500px;
-    background-color:#62BCD7;
   }
 
-  .white-bar-intro{
-    position: relative;
-    height: 100px;
-      box-shadow: 1px 1px #d9d9d9;
-  }
-
-/* Home Intro section  */
   .lema-container{
     position:absolute;
     max-width:100%;
     top:0%;
     left:0%;
-    /* height:150px; */
     max-height:100%;
   }
 
@@ -111,12 +98,6 @@
   vertical-align: middle;
   line-height: 50px;
   }
-
-
-
-
-
-
 }
 
  /* BIG SCREEN */
@@ -131,8 +112,7 @@
     top:100px;
     background-color:#62BCD7;
   }
-
-
+  
   .lema-container{
     top:10%;
   } 
