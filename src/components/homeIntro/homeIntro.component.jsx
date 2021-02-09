@@ -1,18 +1,25 @@
 import React from 'react'
+import { Link } from "react-router-dom"
+
 import { YolsPortada2 } from "../images/utils"
-import { HomeIntroSection } from "../homeIntroSection/homeIntroSection.component"
 import "./homeIntro.styles.css"
 
 const HomeIntro = () => {
   return (
     <div className="home-intro-container">
-
-
-      <img className="Home-Intro-Image"
+      {/* <img className="home-intro-image"
         src={YolsPortada2}
-        alt="Home Page" />
+        alt="Home Page" /> */}
 
-      <  HomeIntroSection />
+      <div className="lema-container">
+        <h1 className="lema-text">aclama tu rizo</h1>
+        <Link className="abcButton" to="/abc">Saber Más</Link>
+      </div>
+
+
+
+
+
     </div>
   )
 }

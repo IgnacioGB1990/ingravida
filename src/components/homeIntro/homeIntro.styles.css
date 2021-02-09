@@ -10,24 +10,77 @@
 }
 
 .home-intro-container {
+  padding-top:100px;
   height:600px;
   width:100vw;
-  background-color: #fff;
-  /* z-index: 1; */
-  position: relative;
-  top:100px;
+ 
+  z-index: 0;
+  /* position: relative; */
   background-color:#62BCD7;
   display:flex;
   flex-direction: column;
 }
 
-.Home-Intro-Image {
+.home-intro-image {
   object-fit: cover;
  width: 100%;
  height: 100%;
-  
-
 }
+
+.lema-container{
+  top:70px;
+  width:80vw;
+  height:200px;
+  position: absolute;
+  bottom:0;left:0; right:0;
+  margin:auto;
+  text-align: center;
+  display:flex;
+  flex-direction: column;
+  background-color: red;
+} 
+
+.lema-text{
+  font-size: 40px;
+  letter-spacing: 5px;
+  font-family: Montserrat;
+  text-transform: uppercase;
+  color:white;
+  font-weight: 900;
+}
+
+.abcButton{
+  text-decoration: none;
+  color:black;
+  background-color:white;
+  font-family: Monserrat;
+  text-transform: uppercase;
+  border: 1px solid black;
+  width:100px;
+  margin:auto;
+  /* height:50px;
+ 
+  background-color:white;
+  text-align: center;
+  font-family: Canela Deck,serif;
+  font-size:1.1em;
+  border: 1px solid black; 
+  font-weight:bold;
+  margin-top:3%;
+  padding:1% 0px;
+  margin-left:40%;
+  width:15%;
+  font-family: NB International,News Gothic MT,Helvetica,Arial,"sans-serif";
+  font-weight:540;
+  cursor: pointer; */
+}
+
+.abcButton:hover{
+  color:black;
+  background-color: #62D7D5;
+}
+
+
 
 
 
@@ -47,6 +100,60 @@
       box-shadow: 1px 1px #d9d9d9;
   }
 
+/* Home Intro section  */
+  .lema-container{
+    position:absolute;
+    max-width:100%;
+    top:0%;
+    left:0%;
+    /* height:150px; */
+    max-height:100%;
+  }
+
+  .lema-text{
+    font-size: 30px;
+    color:black;
+  }
+
+ 
+  /* .Home-Intro-Button-Container{
+    all:none;
+    position: relative;
+    color:black;
+    margin-bottom:1%;
+    padding-top:1px; 
+    font-size: 15px;
+    border:1px solid black;
+    border-radius: solid 80px;
+    width:70vw;
+    left:10%;
+    text-align:center;
+  }
+
+  .Home-Intro-Button-Container:hover{
+    all:none; 
+    background-color: #E9FFAA;
+  } */
+
+  .abcButton{
+  padding:1.5% 0px;
+  height:40px;
+  font-size:1.1em;
+  border: 1px solid black; 
+  font-weight:550;
+  margin-top:5%;
+  margin-left:5%;
+  width:90%;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1;
+  }
+
+
+
+
+
+
 }
 
  /* BIG SCREEN */
@@ -61,4 +168,9 @@
     top:100px;
     background-color:#62BCD7;
   }
+
+
+  .lema-container{
+    top:10%;
+  } 
 } 
