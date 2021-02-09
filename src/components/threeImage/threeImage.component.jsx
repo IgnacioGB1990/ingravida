@@ -12,18 +12,18 @@ const ThreeImage = () => {
           src={FotoOndulada}
           alt="Home Page" />
 
-<div className="collec-title">colleción lavado</div>
+        <div className="collec-title">gama de lavado</div>
       </div>
       <div className="three-style"> <img className="home-intro-image"
         src={FotoRizada}
         alt="Home Page" />
-        <div className="collec-title">colleción estilo</div>
+        <div className="collec-title">gama de definición</div>
 
       </div>
       <div className="three-accesories"> <img className="home-intro-image"
         src={FotoExtraRizada}
         alt="Home Page" />
-        <div className="collec-title">colleción accesorios</div>
+        <div className="collec-title">gama de accesorios</div>
       </div>
     </div >
   )

@@ -13,7 +13,7 @@ function HomePage() {
     <>
 
       <HomeIntro />
-      <ThreeImage />
+      {/* <ThreeImage /> */}
       {/* <HomeTest />
       <HomeIngredients />
       <HomeInstagram />
