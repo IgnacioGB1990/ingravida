@@ -44,7 +44,7 @@
 
 .nav-menu{
   order:2;
-  height:30px;
+  // height:30px;
   display: flex;
   list-style:none;
   width:70%;
@@ -129,12 +129,13 @@ display:none;
     left: 0;
     opacity:1;
     transition: all 0.3s ease;
-    top:30px;
+    top:50px;
     height:100vh; 
 
     text-align: center;
     vertical-align: middle;
     line-height: 50px;
+    border:1px solid black;
    
   }
 
