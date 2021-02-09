@@ -1,25 +1,19 @@
 .three-image-container{
-  top:0px;
-height:300px;
+top:0px;
+height:400px;
 width:100%;
 background-color:blue;
 display:flex;
 flex-direction: row;
-
-
-
 }
-
 
 .three-wash, .three-style, .three-accesories{
-
-  width:33.3333vw;
-  height:100%;
-  background-color: yellow;
-  position: relative;
+width:33.3333%;
+height:100%;
+background-color: yellow;
+position: relative;
 text-align: center;
 }
-
 
 .collec-title{
   position: absolute;
@@ -29,6 +23,26 @@ text-align: center;
   text-transform: uppercase;
   color:white;
   width:100%;
- 
-  background-color:blue;
+  font-size: 1.6rem;
+  font-weight: 600;
+  // background-color:blue;
+}
+
+
+@media screen and (max-width:1000px){
+  .three-image-container{
+    top:0px;
+    height:500px;
+    
+    flex-direction: column;
+    }
+
+    .three-wash, .three-style, .three-accesories{
+      width:100%;
+      height:100%;
+      
+      position: relative;
+      text-align: center;
+      }
+
 }

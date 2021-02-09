@@ -23,7 +23,7 @@ const ThreeImage = () => {
       <div className="three-accesories"> <img className="home-intro-image"
         src={FotoExtraRizada}
         alt="Home Page" />
-        <div className="collec-title">gama de accesorios</div>
+        <div className="collec-title">accesorios</div>
       </div>
     </div >
   )
