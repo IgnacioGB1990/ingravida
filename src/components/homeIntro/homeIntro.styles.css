@@ -37,7 +37,7 @@
   text-align: center;
   display:flex;
   flex-direction: column;
-  background-color: red;
+ 
 } 
 
 .lema-text{
@@ -56,23 +56,14 @@
   font-family: Monserrat;
   text-transform: uppercase;
   border: 1px solid black;
-  width:100px;
+  width:200px;
+  height:50px;
   margin:auto;
-  /* height:50px;
- 
-  background-color:white;
   text-align: center;
-  font-family: Canela Deck,serif;
-  font-size:1.1em;
-  border: 1px solid black; 
-  font-weight:bold;
-  margin-top:3%;
-  padding:1% 0px;
-  margin-left:40%;
-  width:15%;
-  font-family: NB International,News Gothic MT,Helvetica,Arial,"sans-serif";
-  font-weight:540;
-  cursor: pointer; */
+  vertical-align: middle;
+  line-height: 50px;
+  cursor: pointer;
+  font-size:1.2em
 }
 
 .abcButton:hover{
@@ -115,38 +106,10 @@
     color:black;
   }
 
- 
-  /* .Home-Intro-Button-Container{
-    all:none;
-    position: relative;
-    color:black;
-    margin-bottom:1%;
-    padding-top:1px; 
-    font-size: 15px;
-    border:1px solid black;
-    border-radius: solid 80px;
-    width:70vw;
-    left:10%;
-    text-align:center;
-  }
-
-  .Home-Intro-Button-Container:hover{
-    all:none; 
-    background-color: #E9FFAA;
-  } */
-
   .abcButton{
-  padding:1.5% 0px;
-  height:40px;
-  font-size:1.1em;
-  border: 1px solid black; 
-  font-weight:550;
-  margin-top:5%;
-  margin-left:5%;
-  width:90%;
-  font-weight: bold;
-  cursor: pointer;
-  z-index: 1;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 50px;
   }
 
 
