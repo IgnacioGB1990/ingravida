@@ -11,7 +11,6 @@ const ThreeImage = () => {
         <img className="home-intro-image"
           src={FotoOndulada}
           alt="Home Page" />
-
         <div className="collec-title">gama de lavado</div>
         <Link className="compra-collec" to="/productos/lavado">compra lavado</Link>
       </div>

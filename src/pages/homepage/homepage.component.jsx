@@ -14,8 +14,8 @@ function HomePage() {
 
       <HomeIntro />
       <ThreeImage />
-      {/* <HomeTest />
-      <HomeIngredients />
+      <HomeTest />
+      {/* <HomeIngredients />
       <HomeInstagram />
       <HomeFooter />*/}
     </>
