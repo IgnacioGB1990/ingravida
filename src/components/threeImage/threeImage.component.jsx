@@ -13,17 +13,19 @@ const ThreeImage = () => {
           alt="Home Page" />
 
         <div className="collec-title">gama de lavado</div>
+        <Link className="compra-collec" to="/productos/lavado">compra lavado</Link>
       </div>
       <div className="three-style"> <img className="home-intro-image"
         src={FotoRizada}
         alt="Home Page" />
         <div className="collec-title">gama de definición</div>
-
+        <Link className="compra-collec" to="/productos/definicion">compra definición</Link>
       </div>
       <div className="three-accesories"> <img className="home-intro-image"
         src={FotoExtraRizada}
         alt="Home Page" />
         <div className="collec-title">accesorios</div>
+        <Link className="compra-collec" to="/producots/accesorios">compra accesorios</Link>
       </div>
     </div >
   )
