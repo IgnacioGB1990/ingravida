@@ -8,21 +8,16 @@ import UserLogo from "./user-logo.component"
 import CartIcon from "./cart-icon.component"
 import CartDropdown from "./cart-dropdown.component"
 import { selectCartHidden } from "../../redux/cart/cart.selectors"
-// import { selectCurrentUser } from "../../redux/user/user.selectors"
 
 import "./Navbar.styles.scss"
 
 export const Navbar = ({ hidden }) => {
   const [Display, setDisplay] = useState(false)
   const [ExpandNav, setExpandNav] = useState(false)
-  const [Item, setItem] = useState("")
+  const [ProductsForPreview, setProductsForPreview] = useState("")
 
-  console.log("THis is the item in state:", Item)
-  function Hello({ item }) {
-    console.log("Estas haciendo hover sobre: ", { item: item.title })
+  console.log("THis is the item in state:", ProductsForPreview)
 
-    setItem({ item: item.title })
-  }
 
 
   return (
@@ -47,7 +42,7 @@ export const Navbar = ({ hidden }) => {
             <li className="nav-boxes" key={index}>
               <Link
                 //onMouseEnter={() => Hello({ item })}
-                onMouseEnter={() => setItem(item.title)}
+                onMouseEnter={() => setProductsForPreview(item)}
                 onClick={() => { setDisplay(!Display) }}
                 className={item.cName}
                 type={item.title}
@@ -58,7 +53,13 @@ export const Navbar = ({ hidden }) => {
           )
         })}
       </ul>
-      <div className={ExpandNav ? "hoverPreview active" : "hoverPreview"}>{ExpandNav && <h2>{Item}</h2>}</div>
+      <div className={ExpandNav ? "hoverPreview active" : "hoverPreview"}>
+        {ExpandNav && <div className="hoveredDiv">
+          <h2 className="preview-title">{ProductsForPreview.title}</h2>
+          <div></div>
+
+
+        </div>}</div>
     </nav >
   )
 }

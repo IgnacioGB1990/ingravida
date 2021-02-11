@@ -75,11 +75,26 @@
   
 }
 
-.nopepe{
-  display:none;
+.hoveredDiv{
+  width:70%;
+  height:100%;
+  border:1px solid black;
+  margin:auto;
 }
 
-
+.preview-title{
+  color:black;
+  text-decoration:none;
+ 
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  font-family: Montserrat;
+  background-color: yellow;
+  height:40px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 40px;
+}
 
 
 // .nav-links:hover + .pepe{
