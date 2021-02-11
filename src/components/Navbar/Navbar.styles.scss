@@ -78,7 +78,7 @@
 .hoveredDiv{
   width:70%;
   height:100%;
-  border:1px solid black;
+  // border:1px solid black;
   margin:auto;
 }
 
@@ -89,25 +89,38 @@
   letter-spacing: 5px;
   text-transform: uppercase;
   font-family: Montserrat;
-  background-color: yellow;
+ 
   height:40px;
   text-align: center;
   vertical-align: middle;
   line-height: 40px;
 }
 
+.product-selection{
 
-// .nav-links:hover + .pepe{
-//    display:block;
-//    position:absolute;
-//   padding-top:100px;
-//   width:200px;
-//   height:200px;
-//   background-color:yellow;
-//   // border-radius:4px;
-//   // transition: all 0.2s ease-out;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height:258px;
   
-// }
+}
+
+.container-images{
+ 
+  height: 100%;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 100%;
+
+}
+
+.preview-images{
+
+  width:140px;
+  height:200px;
+}
+
+
 
 
 
@@ -155,8 +168,7 @@ display:none;
     top:50px;
     left:-100%;
     opacity:1;
-    transition: all 0.3s ease;
-    
+    transition: all 0.3s ease;  
   }
 
   .nav-menu.active{
@@ -183,8 +195,7 @@ display:none;
     padding: 1rem;
     width:100%;
     display: table;
-    height: 10px;
-    
+    height: 10px;  
   }
 
   .nav-links:hover{
@@ -220,19 +231,16 @@ display:none;
     display:none;
   }
 
-
 }
 
 
 
 @media screen and (min-width:1400px){
 
-  .nav-menu{
-    
+  .nav-menu{  
     width:80vw;
     display:flex;
-    justify-content: center;
-    
+    justify-content: center;  
   }
 
   .nav-links{

@@ -54,11 +54,22 @@ export const Navbar = ({ hidden }) => {
         })}
       </ul>
       <div className={ExpandNav ? "hoverPreview active" : "hoverPreview"}>
+
         {ExpandNav && <div className="hoveredDiv">
           <h2 className="preview-title">{ProductsForPreview.title}</h2>
-          <div></div>
+          <div className="product-selection">
+            {ProductsForPreview.display.map((product, index) => {
+              return (
+                <div className="container-images" key={index}>
+                  <img alt="preview images"
+                    src={product}
+                    className="preview-images"
+                  />
 
-
+                </div>
+              )
+            })}
+          </div>
         </div>}</div>
     </nav >
   )
