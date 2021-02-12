@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from "react-redux"
-import { useHistory } from "react-router-dom"
+import { Link, useHistory } from "react-router-dom"
 
 import CustomButton from "../custom-button/custom-button.component"
 import { addItem } from "../../../redux/cart/cart.actions"
@@ -12,14 +12,20 @@ const CollectionPreview = ({ item, addItem }) => {
   const history = useHistory()
   const { name, price, imageUrl } = item;
 
+  // const product = products.find(p => p._id === match.params.id)
+  //onClick={() => { history.push(`/tienda/${name.toLowerCase()}`) }}
+
+
   console.log("this is item", item)
   return (
     <div className="collection-preview" >
 
-      <img onClick={() => { history.push(`/tienda/${name.toLowerCase()}`) }}
+
+      <Link to={`/tienda/${item.routeName}`} ><img
         alt="products"
         className="image"
-        src={imageUrl} />
+        src={imageUrl} /></Link>
+
 
       <div className="footer">
         <span className="title">{name}</span>
