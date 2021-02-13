@@ -16,7 +16,7 @@ export const Navbar = ({ hidden }) => {
   const [ExpandNav, setExpandNav] = useState(false)
   const [ProductsForPreview, setProductsForPreview] = useState("")
 
-  console.log("THis is the item in state:", ProductsForPreview)
+  // console.log("THis is the item in state:", ProductsForPreview)
 
 
 

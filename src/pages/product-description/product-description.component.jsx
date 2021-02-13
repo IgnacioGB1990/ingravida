@@ -6,13 +6,19 @@ import { selectProduct } from "../../redux/shop/shop.selectors"
 import "./product-description.styles.scss"
 import ProductDescription from "../../components/product-description/product-description.component"
 
-const ProductDescriptionPage = ({ collection }) => {
+const ProductDescriptionPage = ({ match, collection }) => {
 
-  console.log("This is my products", collection)
+  console.log("this is my selection", collection);
+  const product = collection.find(p => p._id === match.params.id)
+
+  console.log("This is my products", product)
   return (
     <div className="product-container" >
-      <h2>PRODUCT DESCRIPTION PAGE</h2>
-      <ProductDescription collection={collection} />
+
+
+
+
+      <ProductDescription product={product} />
     </div>
 
   );

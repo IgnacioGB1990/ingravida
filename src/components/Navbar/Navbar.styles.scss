@@ -63,6 +63,15 @@
   letter-spacing: 2px;
   text-transform: uppercase;
   font-family: Montserrat;
+  padding:3px;
+}
+
+.nav-links:hover{
+  background-color: #62BCD7;
+  border-radius: 5px;
+  padding:3px;
+  color:white;
+  
 }
 
 .hoverPreview.active{

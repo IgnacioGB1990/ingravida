@@ -2,15 +2,15 @@ import React from 'react'
 
 import "./product-description.styles.scss"
 
-const ProductDescription = ({ collection }) => {
-  console.log("Esto es collection??", collection)
+const ProductDescription = ({ product }) => {
+  console.log("Esto es product??", product)
 
-  const { name, imageUrl, price } = collection;
+  const { name, imageUrl, price } = product;
 
   return (
 
-    <div className="cart-item">
-      <img src={imageUrl} alt="item" />
+    <div className="cart-item-des">
+      <img className="img-detail" src={imageUrl} alt="item" />
       <div className="item-details">
         <span className="name">{name}</span>
         <span className="price">

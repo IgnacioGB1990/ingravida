@@ -1,6 +1,6 @@
 import React from 'react'
 import { connect } from "react-redux"
-import { Link, useHistory } from "react-router-dom"
+import { Link } from "react-router-dom"
 
 import CustomButton from "../custom-button/custom-button.component"
 import { addItem } from "../../../redux/cart/cart.actions"
@@ -9,14 +9,15 @@ import { addItem } from "../../../redux/cart/cart.actions"
 import "./collection-preview.styles.scss"
 
 const CollectionPreview = ({ item, addItem }) => {
-  const history = useHistory()
+  //const history = useHistory()
   const { name, price, imageUrl } = item;
+  //console.log("this is name", name);
 
   // const product = products.find(p => p._id === match.params.id)
   //onClick={() => { history.push(`/tienda/${name.toLowerCase()}`) }}
 
 
-  console.log("this is item", item)
+  //console.log("this is item", item)
   return (
     <div className="collection-preview" >
 
