@@ -58,3 +58,4 @@ export default connect(null, mapDispatchToProps)(ShopPage);
 
 
 {/* < Route exact path={`${match.path}`} component={CollectionsOverview}  /> */ }
+// ???
